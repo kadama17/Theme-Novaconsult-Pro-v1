@@ -1,769 +1,187 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>NovaConsult Pro - Odoo Theme</title>
-  <style>
-    :root{
-      --bg:#0b1020;
-      --panel:rgba(255,255,255,.06);
-      --panel2:rgba(255,255,255,.10);
-      --ink:#e9eefc;
-      --muted:rgba(233,238,252,.72);
-      --line:rgba(233,238,252,.12);
-      --accent:#f3ff1a;
-      --accent2:#22c55e;
-
-      --radius-xl:26px;
-      --radius-lg:18px;
-      --radius-md:14px;
-
-      --shadow-1:0 18px 50px rgba(0,0,0,.35);
-      --shadow-2:0 10px 30px rgba(0,0,0,.25);
-
-      --max:90%;
-
-      /* Typography scale */
-      --h1: 42px;
-      --h2: 22px;
-      --h3: 16px;
-      --p: 15px;
-      --sub: 17px;
-    }
-
-    *{box-sizing:border-box}
-    html,body{margin:0; padding:0}
-    body{
-      font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-      background:#fff;
-      color:#111827;
-      line-height:1.6;
-      font-size:var(--p);
-    }
-    a{color:inherit; text-decoration:none}
-    .wrap{max-width:var(--max); margin:0 auto; padding:28px 18px 40px}
-
-    /* ===== Hero ===== */
-    .hero{
-      border-radius:var(--radius-xl);
-      overflow:hidden;
-      border:1px solid rgba(255,255,255,.08);
-      background:
-        radial-gradient(850px 360px at 18% 12%, rgba(243,255,26,.20), transparent 60%),
-        radial-gradient(820px 360px at 82% 10%, rgba(34,197,94,.14), transparent 60%),
-        linear-gradient(180deg, var(--bg), #070b16);
-      box-shadow:var(--shadow-1);
-      color:var(--ink);
-    }
-    .hero__top{
-      padding:26px 22px 14px;
-      display:flex;
-      align-items:flex-start;
-      justify-content:space-between;
-      gap:14px;
-    }
-    .brand{
-      display:flex;
-      gap:12px;
-      align-items:center;
-      min-width:0;
-    }
-    .brand__icon{
-      width:44px; height:44px;
-      border-radius:14px;
-      background:rgba(255,255,255,.06);
-      border:1px solid rgba(255,255,255,.10);
-      display:flex; align-items:center; justify-content:center;
-      overflow:hidden;
-      flex:0 0 auto;
-    }
-    .brand__icon img{width:100%; height:100%; object-fit:cover; display:block}
-    .brand__meta{min-width:0}
-    .badge{
-      display:inline-flex;
-      gap:8px;
-      align-items:center;
-      font-size:12px;
-      letter-spacing:.2px;
-      padding:7px 10px;
-      border-radius:999px;
-      background:rgba(255,255,255,.08);
-      border:1px solid rgba(255,255,255,.12);
-      color:rgba(233,238,252,.88);
-      margin-bottom:10px;
-    }
-    .badge b{color:var(--accent)}
-
-    h1{
-      margin:0 0 10px;
-      font-size:var(--h1);
-      line-height:1.08;
-      letter-spacing:-.45px;
-    }
-    .sub{
-      margin:0;
-      max-width:900px;
-      color:rgba(233,238,252,.78);
-      font-size:var(--sub);
-    }
-
-    .hero__grid{
-      padding:0 22px 22px;
-      display:grid;
-      grid-template-columns: 1.05fr .95fr;
-      gap:14px;
-      align-items:stretch;
-    }
-    .card{
-      border-radius:var(--radius-lg);
-      background:rgba(255,255,255,.06);
-      border:1px solid rgba(255,255,255,.10);
-      padding:14px 14px;
-    }
-    .card h3{
-      margin:0 0 8px;
-      font-size:14px;
-      letter-spacing:.2px;
-      color:rgba(233,238,252,.92);
-    }
-    .check{
-      margin:0;
-      padding-left:18px;
-      color:rgba(233,238,252,.78);
-      font-size:13px;
-    }
-    .check li{margin:7px 0}
-    .pills{display:flex; flex-wrap:wrap; gap:8px; margin-top:10px}
-    .pill{
-      font-size:12px;
-      padding:6px 10px;
-      border-radius:999px;
-      background:rgba(255,255,255,.06);
-      border:1px solid rgba(255,255,255,.10);
-      color:rgba(233,238,252,.88);
-    }
-
-    /* ===== Stats / KPIs in hero ===== */
-    .stats{
-      margin-top:12px;
-      display:grid;
-      grid-template-columns:repeat(4,1fr);
-      gap:10px;
-    }
-    .stat{
-      border-radius:18px;
-      background:rgba(255,255,255,.06);
-      border:1px solid rgba(255,255,255,.10);
-      padding:12px 12px;
-    }
-    .stat b{
-      display:block;
-      font-size:22px;
-      line-height:1;
-      letter-spacing:-.4px;
-      color:var(--accent);
-      margin-bottom:6px;
-    }
-    .stat span{
-      display:block;
-      font-size:12px;
-      color:rgba(233,238,252,.82);
-    }
-    .stat small{
-      display:block;
-      margin-top:6px;
-      font-size:12px;
-      color:rgba(233,238,252,.68);
-    }
-
-    .cover{
-      border-radius:var(--radius-lg);
-      overflow:hidden;
-      border:1px solid rgba(255,255,255,.10);
-      background:rgba(255,255,255,.04);
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      min-height:220px;
-    }
-    .cover img{width:100%; height:auto; display:block}
-
-    /* ===== Sections ===== */
-    .section{margin:22px 0 0}
-    .section h2{
-      font-size:var(--h2);
-      margin:0 0 10px;
-      letter-spacing:-.25px;
-      color:#0f172a;
-    }
-    .section p{margin:0 0 10px; color:#334155}
-
-    .split{
-      display:grid;
-      grid-template-columns:1fr 1fr;
-      gap:12px;
-    }
-    .grid{
-      display:grid;
-      grid-template-columns:repeat(3,1fr);
-      gap:12px;
-    }
-    .box{
-      border-radius:16px;
-      border:1px solid #e9edf6;
-      background:#fff;
-      padding:14px 14px;
-      box-shadow: 0 6px 18px rgba(10,20,40,.06);
-    }
-    .box h4{margin:0 0 6px; font-size:var(--h3); color:#0f172a}
-    .box p{margin:0; font-size:13px; color:#475569}
-    .muted{color:#64748b}
-    .list{margin:8px 0 0; padding-left:18px}
-    .list li{margin:6px 0; color:#334155}
-
-    .kpi{
-      margin-top:10px;
-      display:grid;
-      grid-template-columns:repeat(4,1fr);
-      gap:10px;
-    }
-    .kpi .box{padding:12px}
-    .kpi b{display:block; font-size:14px; margin-bottom:4px}
-    .kpi span{font-size:12px; color:#64748b}
-
-    /* ===== Gallery ===== */
-    .gallery{
-      margin-top:12px;
-      display:grid;
-      grid-template-columns:repeat(2,1fr);
-      gap:12px;
-    }
-    .shot{
-      border-radius:18px;
-      overflow:hidden;
-      border:1px solid #e9edf6;
-      background:#f8faff;
-      box-shadow: 0 6px 18px rgba(10,20,40,.06);
-      position:relative;
-      cursor:pointer;
-    }
-    .shot img{
-      width:100%;
-      height:auto;
-      display:block;
-      transform:translateZ(0);
-      transition: transform .25s ease, filter .25s ease;
-    }
-    .shot:hover img{
-      transform:scale(1.02);
-      filter:saturate(1.05);
-    }
-    .shot__label{
-      position:absolute;
-      left:12px;
-      bottom:12px;
-      padding:7px 10px;
-      border-radius:999px;
-      background:rgba(11,16,32,.72);
-      border:1px solid rgba(233,238,252,.12);
-      color:rgba(233,238,252,.92);
-      font-size:12px;
-      backdrop-filter: blur(6px);
-    }
-    .shot__hint{
-      position:absolute;
-      right:12px;
-      top:12px;
-      width:34px; height:34px;
-      border-radius:999px;
-      display:flex; align-items:center; justify-content:center;
-      background:rgba(11,16,32,.58);
-      border:1px solid rgba(233,238,252,.12);
-      color:rgba(233,238,252,.92);
-      font-size:14px;
-      backdrop-filter: blur(6px);
-    }
-
-    /* ===== Lightbox (popup) ===== */
-    .lb{
-      position:fixed;
-      inset:0;
-      background:rgba(0,0,0,.72);
-      display:none;
-      align-items:center;
-      justify-content:center;
-      padding:20px;
-      z-index:9999;
-    }
-    .lb.is-open{display:flex}
-    .lb__dialog{
-      width:min(1100px, 96vw);
-      max-height:92vh;
-      border-radius:22px;
-      overflow:hidden;
-      background:rgba(11,16,32,.92);
-      border:1px solid rgba(233,238,252,.12);
-      box-shadow:var(--shadow-1);
-      display:flex;
-      flex-direction:column;
-    }
-    .lb__bar{
-      display:flex;
-      align-items:center;
-      justify-content:space-between;
-      gap:10px;
-      padding:12px 12px;
-      border-bottom:1px solid rgba(233,238,252,.12);
-      color:rgba(233,238,252,.92);
-    }
-    .lb__title{
-      font-size:13px;
-      color:rgba(233,238,252,.85);
-      overflow:hidden;
-      text-overflow:ellipsis;
-      white-space:nowrap;
-      max-width:70%;
-    }
-    .lb__btns{display:flex; gap:8px; align-items:center}
-    .btn{
-      appearance:none;
-      border:1px solid rgba(233,238,252,.18);
-      background:rgba(255,255,255,.06);
-      color:rgba(233,238,252,.92);
-      padding:8px 10px;
-      border-radius:12px;
-      font-size:12px;
-      cursor:pointer;
-      transition: transform .15s ease, background .15s ease, border-color .15s ease;
-      user-select:none;
-    }
-    .btn:hover{
-      transform:translateY(-1px);
-      background:rgba(255,255,255,.08);
-      border-color:rgba(233,238,252,.26);
-    }
-    .btn:active{transform:translateY(0)}
-    .btn-primary{
-      border-color:rgba(243,255,26,.35);
-      background:rgba(243,255,26,.10);
-    }
-    .lb__content{
-      padding:12px;
-      overflow:auto;
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      background:
-        radial-gradient(900px 420px at 18% 12%, rgba(243,255,26,.10), transparent 60%),
-        radial-gradient(900px 420px at 82% 10%, rgba(34,197,94,.08), transparent 60%),
-        linear-gradient(180deg, rgba(11,16,32,.92), rgba(8,10,18,.92));
-    }
-    .lb__content img{
-      width:100%;
-      height:auto;
-      display:block;
-      border-radius:18px;
-      border:1px solid rgba(233,238,252,.10);
-      box-shadow:var(--shadow-2);
-      max-width:1060px;
-    }
-    .lb__help{
-      padding:10px 12px 14px;
-      font-size:12px;
-      color:rgba(233,238,252,.70);
-      border-top:1px solid rgba(233,238,252,.10);
-    }
-    .lb__help b{color:var(--accent)}
-    .kbd{
-      display:inline-flex;
-      align-items:center;
-      justify-content:center;
-      min-width:26px;
-      height:22px;
-      padding:0 6px;
-      border-radius:8px;
-      border:1px solid rgba(233,238,252,.18);
-      background:rgba(255,255,255,.06);
-      color:rgba(233,238,252,.90);
-      font-size:11px;
-      margin:0 3px;
-    }
-
-    /* ===== CTA ===== */
-    .cta{
-      margin-top:18px;
-      border-radius:22px;
-      padding:18px 16px;
-      border:1px solid #e6ebff;
-      background:
-        radial-gradient(700px 260px at 15% 10%, rgba(243,255,26,.18), transparent 60%),
-        radial-gradient(700px 260px at 85% 10%, rgba(34,197,94,.14), transparent 60%),
-        linear-gradient(180deg, #ffffff, #f7f9ff);
-    }
-    .cta h3{margin:0 0 6px; font-size:16px; color:#0f172a}
-    .cta p{margin:0; color:#475569; font-size:13px}
-    .cta .pills{margin-top:12px}
-    .pill-light{
-      font-size:12px;
-      padding:6px 10px;
-      border-radius:999px;
-      background:#f6f8ff;
-      border:1px solid #e7ebff;
-      color:#2b3350;
-    }
-
-    .footer{
-      margin:22px 0 6px;
-      padding:12px 0 0;
-      border-top:1px solid #eef1fb;
-      font-size:12px;
-      color:#6b7387;
-      display:flex;
-      flex-wrap:wrap;
-      gap:10px;
-      justify-content:space-between;
-    }
-
-    @media (max-width: 980px){
-      .hero__grid{grid-template-columns:1fr}
-      .split{grid-template-columns:1fr}
-      .grid{grid-template-columns:1fr}
-      .kpi{grid-template-columns:1fr 1fr}
-      .gallery{grid-template-columns:1fr}
-      .stats{grid-template-columns:1fr 1fr}
-      h1{font-size:32px}
-      :root{ --h2:20px; --sub:16px; }
-    }
-  </style>
 </head>
-
-<body>
-  <div class="wrap">
+<body style="margin:0;padding:0;background:#ffffff;color:#0f172a;font-family:Arial,Helvetica,sans-serif;line-height:1.6;">
+  <div style="max-width:980px;margin:0 auto;padding:26px 16px 34px;">
 
     <!-- HERO -->
-    <section class="hero">
-      <div class="hero__top">
-        <div class="brand">
-          <div class="brand__icon">
-            <img src="icon.png" alt="NovaConsult Pro Icon" />
-          </div>
-          <div class="brand__meta">
-            <div class="badge">
-              <span>Premium Theme</span>
-              <span>•</span>
-              <b>Website Builder Ready</b>
-              <span>•</span>
-              <span>Responsive</span>
-            </div>
-
-            <h1>NovaConsult Pro — Premium Consulting & Agency Theme for Odoo</h1>
-            <p class="sub">
-              A modern, conversion-focused theme for consulting firms, agencies and SaaS businesses.
-              Cohesive sections, strong hierarchy, and a builder-safe structure — ready for production websites.
-            </p>
-          </div>
+    <div style="border-radius:22px;overflow:hidden;border:1px solid #0b1020;background:#0b1020;color:#e9eefc;padding:18px 18px 16px;">
+      <div style="display:block;">
+        <div style="display:inline-block;background:rgba(255,255,255,.10);border:1px solid rgba(255,255,255,.14);padding:6px 10px;border-radius:999px;font-size:12px;margin-bottom:10px;">
+          Premium Theme • <b style="color:#f3ff1a;">Website Builder Ready</b> • Responsive
         </div>
+
+        <table role="presentation" cellpadding="0" cellspacing="0" style="width:100%;border-collapse:collapse;">
+          <tr>
+            <td style="width:56px;vertical-align:top;">
+              <div style="width:46px;height:46px;border-radius:14px;overflow:hidden;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.14);">
+                <img src="icon.png" alt="NovaConsult Pro Icon" style="width:46px;height:46px;display:block;">
+              </div>
+            </td>
+            <td style="vertical-align:top;padding-left:12px;">
+              <h1 style="margin:0 0 8px;font-size:28px;line-height:1.15;letter-spacing:-0.2px;">
+                NovaConsult Pro — Premium Consulting & Agency Theme for Odoo
+              </h1>
+              <p style="margin:0;color:rgba(233,238,252,.80);font-size:15px;">
+                A modern, conversion-focused theme for consulting firms, agencies and SaaS businesses.
+                Cohesive sections, strong hierarchy, and a builder-safe structure — ready for production websites.
+              </p>
+            </td>
+          </tr>
+        </table>
+
+        <div style="height:12px;"></div>
+
+        <!-- 2 columns (table) -->
+        <table role="presentation" cellpadding="0" cellspacing="0" style="width:100%;border-collapse:separate;border-spacing:10px;">
+          <tr>
+            <td style="width:58%;vertical-align:top;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.14);border-radius:16px;padding:12px;">
+              <div style="font-size:13px;color:rgba(233,238,252,.92);margin-bottom:8px;"><b>What you get</b></div>
+              <ul style="margin:0;padding-left:18px;color:rgba(233,238,252,.78);font-size:13px;">
+                <li style="margin:6px 0;">100% compatible with Odoo Website Builder (drag & drop)</li>
+                <li style="margin:6px 0;">No core modification • No Python required</li>
+                <li style="margin:6px 0;">Scoped CSS architecture (clean & conflict-free)</li>
+                <li style="margin:6px 0;">Premium interconnected sections (no broken transitions)</li>
+                <li style="margin:6px 0;">Fully responsive and optimized for lead generation</li>
+              </ul>
+
+              <div style="height:10px;"></div>
+              <div style="font-size:12px;">
+                <span style="display:inline-block;margin:0 6px 6px 0;padding:5px 9px;border-radius:999px;border:1px solid rgba(255,255,255,.14);background:rgba(255,255,255,.06);color:rgba(233,238,252,.90);">Consulting</span>
+                <span style="display:inline-block;margin:0 6px 6px 0;padding:5px 9px;border-radius:999px;border:1px solid rgba(255,255,255,.14);background:rgba(255,255,255,.06);color:rgba(233,238,252,.90);">Agency</span>
+                <span style="display:inline-block;margin:0 6px 6px 0;padding:5px 9px;border-radius:999px;border:1px solid rgba(255,255,255,.14);background:rgba(255,255,255,.06);color:rgba(233,238,252,.90);">Corporate</span>
+                <span style="display:inline-block;margin:0 6px 6px 0;padding:5px 9px;border-radius:999px;border:1px solid rgba(255,255,255,.14);background:rgba(255,255,255,.06);color:rgba(233,238,252,.90);">SaaS</span>
+              </div>
+
+              <div style="height:10px;"></div>
+
+              <!-- STATS -->
+              <table role="presentation" cellpadding="0" cellspacing="0" style="width:100%;border-collapse:separate;border-spacing:8px;">
+                <tr>
+                  <td style="background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.14);border-radius:14px;padding:10px;vertical-align:top;">
+                    <div style="font-size:18px;line-height:1;color:#f3ff1a;"><b>24+</b></div>
+                    <div style="font-size:12px;color:rgba(233,238,252,.85);">Snippets included</div>
+                    <div style="font-size:12px;color:rgba(233,238,252,.70);margin-top:4px;">Hero • Services • Logos • CTA • Footer…</div>
+                  </td>
+                  <td style="background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.14);border-radius:14px;padding:10px;vertical-align:top;">
+                    <div style="font-size:18px;line-height:1;color:#f3ff1a;"><b>6</b></div>
+                    <div style="font-size:12px;color:rgba(233,238,252,.85);">Demo pages</div>
+                    <div style="font-size:12px;color:rgba(233,238,252,.70);margin-top:4px;">Homepage, Services, Pricing, Method…</div>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.14);border-radius:14px;padding:10px;vertical-align:top;">
+                    <div style="font-size:18px;line-height:1;color:#f3ff1a;"><b>100%</b></div>
+                    <div style="font-size:12px;color:rgba(233,238,252,.85);">Builder compatible</div>
+                    <div style="font-size:12px;color:rgba(233,238,252,.70);margin-top:4px;">Drag & drop • No core edits</div>
+                  </td>
+                  <td style="background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.14);border-radius:14px;padding:10px;vertical-align:top;">
+                    <div style="font-size:18px;line-height:1;color:#f3ff1a;"><b>17–18</b></div>
+                    <div style="font-size:12px;color:rgba(233,238,252,.85);">Odoo versions</div>
+                    <div style="font-size:12px;color:rgba(233,238,252,.70);margin-top:4px;">Enterprise & Community</div>
+                  </td>
+                </tr>
+              </table>
+            </td>
+
+            <td style="width:42%;vertical-align:top;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.14);border-radius:16px;overflow:hidden;">
+              <a href="homepage.webp" style="display:block;">
+                <img src="homepage.webp" alt="NovaConsult Pro Homepage" style="width:100%;height:auto;display:block;">
+              </a>
+            </td>
+          </tr>
+        </table>
       </div>
-
-      <div class="hero__grid">
-        <div class="card">
-          <h3>What you get</h3>
-          <ul class="check">
-            <li>100% compatible with Odoo Website Builder (drag & drop)</li>
-            <li>No core modification • No Python required</li>
-            <li>Scoped CSS architecture (clean & conflict-free)</li>
-            <li>Premium interconnected sections (no “broken” transitions)</li>
-            <li>Fully responsive and optimized for lead generation</li>
-          </ul>
-
-          <div class="pills">
-            <span class="pill">Consulting</span>
-            <span class="pill">Agency</span>
-            <span class="pill">Corporate</span>
-            <span class="pill">SaaS</span>
-            <span class="pill">Premium Services</span>
-          </div>
-
-          <!-- STATS (edit numbers) -->
-          <div class="stats">
-            <div class="stat">
-              <b>24+</b>
-              <span>Snippets included</span>
-              <small>Hero • Services • Logos • Testimonials • CTA • Footer…</small>
-            </div>
-            <div class="stat">
-              <b>6</b>
-              <span>Demo pages</span>
-              <small>Homepage, Services, Pricing, Method, Projects, Contact</small>
-            </div>
-            <div class="stat">
-              <b>100%</b>
-              <span>Builder compatible</span>
-              <small>Drag & drop • No core edits</small>
-            </div>
-            <div class="stat">
-              <b>17–18</b>
-              <span>Odoo versions</span>
-              <small>Enterprise & Community</small>
-            </div>
-          </div>
-        </div>
-
-        <div class="cover">
-          <img src="homepage.webp" alt="NovaConsult Pro Homepage" />
-        </div>
-      </div>
-    </section>
+    </div>
 
     <!-- WHY -->
-    <section class="section">
-      <h2>Why NovaConsult Pro?</h2>
-      <div class="split">
-        <div class="box">
-          <h4>The Problem</h4>
-          <p class="muted">Many Odoo websites look generic and lose trust & leads.</p>
-          <ul class="list">
-            <li>Weak hierarchy and inconsistent spacing</li>
-            <li>Hard to keep design cohesive when adding snippets</li>
-            <li>Not optimized for conversion and credibility</li>
-          </ul>
-        </div>
+    <div style="margin-top:18px;">
+      <h2 style="margin:0 0 10px;font-size:20px;letter-spacing:-0.2px;">Why NovaConsult Pro?</h2>
 
-        <div class="box">
-          <h4>The Solution</h4>
-          <p class="muted">A structured theme built for premium positioning and scalability.</p>
-          <ul class="list">
-            <li>Design-system approach (cohesive & interconnected sections)</li>
-            <li>Builder-safe structure (oe_structure compliant)</li>
-            <li>Scoped theme styles (avoids global conflicts)</li>
-            <li>Responsive, conversion-oriented layouts</li>
-          </ul>
-        </div>
-      </div>
+      <table role="presentation" cellpadding="0" cellspacing="0" style="width:100%;border-collapse:separate;border-spacing:10px;">
+        <tr>
+          <td style="width:50%;vertical-align:top;background:#ffffff;border:1px solid #e9edf6;border-radius:16px;padding:12px;box-shadow:0 6px 18px rgba(10,20,40,.06);">
+            <div style="font-size:14px;margin-bottom:6px;"><b>The Problem</b></div>
+            <div style="color:#64748b;margin-bottom:6px;">Many Odoo websites look generic and lose trust & leads.</div>
+            <ul style="margin:0;padding-left:18px;color:#334155;font-size:13px;">
+              <li style="margin:6px 0;">Weak hierarchy and inconsistent spacing</li>
+              <li style="margin:6px 0;">Hard to keep design cohesive when adding snippets</li>
+              <li style="margin:6px 0;">Not optimized for conversion and credibility</li>
+            </ul>
+          </td>
+          <td style="width:50%;vertical-align:top;background:#ffffff;border:1px solid #e9edf6;border-radius:16px;padding:12px;box-shadow:0 6px 18px rgba(10,20,40,.06);">
+            <div style="font-size:14px;margin-bottom:6px;"><b>The Solution</b></div>
+            <div style="color:#64748b;margin-bottom:6px;">A structured theme built for premium positioning and scalability.</div>
+            <ul style="margin:0;padding-left:18px;color:#334155;font-size:13px;">
+              <li style="margin:6px 0;">Design-system approach (cohesive sections)</li>
+              <li style="margin:6px 0;">Builder-safe structure (oe_structure compliant)</li>
+              <li style="margin:6px 0;">Scoped theme styles (avoids global conflicts)</li>
+              <li style="margin:6px 0;">Responsive, conversion-oriented layouts</li>
+            </ul>
+          </td>
+        </tr>
+      </table>
+    </div>
 
-      <div class="kpi">
-        <div class="box"><b>Builder Ready</b><span>Drag & drop sections</span></div>
-        <div class="box"><b>Clean Architecture</b><span>Easy to extend</span></div>
-        <div class="box"><b>Performance</b><span>Lightweight assets</span></div>
-        <div class="box"><b>Conversion Focus</b><span>Marketing-first layout</span></div>
-      </div>
-    </section>
+    <!-- GALLERY (no lightbox) -->
+    <div style="margin-top:18px;">
+      <h2 style="margin:0 0 8px;font-size:20px;letter-spacing:-0.2px;">Included Pages (Preview)</h2>
+      <div style="color:#64748b;font-size:13px;margin-bottom:10px;">Click any screenshot to open it.</div>
 
-    <!-- PAGES / SCREENSHOTS -->
-    <section class="section">
-      <h2>Included Pages (Preview)</h2>
-      <p class="muted">Click any screenshot to open it in a popup (lightbox).</p>
-
-      <div class="gallery">
-        <a class="shot" href="homepage.webp" data-title="Homepage">
-          <span class="shot__hint">⤢</span>
-          <img src="homepage.webp" alt="Homepage" />
-          <span class="shot__label">Homepage</span>
-        </a>
-
-        <a class="shot" href="service-page.webp" data-title="Services Page">
-          <span class="shot__hint">⤢</span>
-          <img src="service-page.webp" alt="Services Page" />
-          <span class="shot__label">Services Page</span>
-        </a>
-
-        <a class="shot" href="pricing.webp" data-title="Pricing Page">
-          <span class="shot__hint">⤢</span>
-          <img src="pricing.webp" alt="Pricing Page" />
-          <span class="shot__label">Pricing</span>
-        </a>
-
-        <a class="shot" href="our-method.webp" data-title="Our Method Page">
-          <span class="shot__hint">⤢</span>
-          <img src="our-method.webp" alt="Our Method Page" />
-          <span class="shot__label">Our Method</span>
-        </a>
-
-        <a class="shot" href="project.webp" data-title="Project Page">
-          <span class="shot__hint">⤢</span>
-          <img src="project.webp" alt="Project Page" />
-          <span class="shot__label">Project</span>
-        </a>
-
-        <a class="shot" href="contact.webp" data-title="Contact Page">
-          <span class="shot__hint">⤢</span>
-          <img src="contact.webp" alt="Contact Page" />
-          <span class="shot__label">Contact</span>
-        </a>
-      </div>
-    </section>
-
-    <!-- FEATURES -->
-    <section class="section">
-      <h2>Key Features</h2>
-      <div class="grid">
-        <div class="box">
-          <h4>100% Website Builder Compatible</h4>
-          <p>All sections are designed to work naturally with Odoo Website Builder.</p>
-        </div>
-        <div class="box">
-          <h4>No Core Modification</h4>
-          <p>Safe integration: no hacking Odoo core views.</p>
-        </div>
-        <div class="box">
-          <h4>Scoped CSS Architecture</h4>
-          <p>Theme styles are scoped (e.g. <b>.th-nova</b>) to avoid global conflicts.</p>
-        </div>
-        <div class="box">
-          <h4>Fully Responsive</h4>
-          <p>Mobile & tablet optimized spacing, stacking and typography.</p>
-        </div>
-        <div class="box">
-          <h4>Conversion-Oriented UI</h4>
-          <p>Clear hierarchy: strong headlines, CTAs and trust sections.</p>
-        </div>
-        <div class="box">
-          <h4>Developer-Friendly</h4>
-          <p>Clean QWeb + structured SCSS makes maintenance easy for integrators.</p>
-        </div>
-      </div>
-    </section>
+      <table role="presentation" cellpadding="0" cellspacing="0" style="width:100%;border-collapse:separate;border-spacing:10px;">
+        <tr>
+          <td style="width:50%;vertical-align:top;background:#f8faff;border:1px solid #e9edf6;border-radius:16px;overflow:hidden;box-shadow:0 6px 18px rgba(10,20,40,.06);">
+            <a href="homepage.webp" style="display:block;">
+              <img src="homepage.webp" alt="Homepage" style="width:100%;height:auto;display:block;">
+            </a>
+            <div style="padding:10px;font-size:13px;"><b>Homepage</b></div>
+          </td>
+          <td style="width:50%;vertical-align:top;background:#f8faff;border:1px solid #e9edf6;border-radius:16px;overflow:hidden;box-shadow:0 6px 18px rgba(10,20,40,.06);">
+            <a href="service-page.webp" style="display:block;">
+              <img src="service-page.webp" alt="Services Page" style="width:100%;height:auto;display:block;">
+            </a>
+            <div style="padding:10px;font-size:13px;"><b>Services</b></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="width:50%;vertical-align:top;background:#f8faff;border:1px solid #e9edf6;border-radius:16px;overflow:hidden;box-shadow:0 6px 18px rgba(10,20,40,.06);">
+            <a href="pricing.webp" style="display:block;">
+              <img src="pricing.webp" alt="Pricing" style="width:100%;height:auto;display:block;">
+            </a>
+            <div style="padding:10px;font-size:13px;"><b>Pricing</b></div>
+          </td>
+          <td style="width:50%;vertical-align:top;background:#f8faff;border:1px solid #e9edf6;border-radius:16px;overflow:hidden;box-shadow:0 6px 18px rgba(10,20,40,.06);">
+            <a href="contact.webp" style="display:block;">
+              <img src="contact.webp" alt="Contact" style="width:100%;height:auto;display:block;">
+            </a>
+            <div style="padding:10px;font-size:13px;"><b>Contact</b></div>
+          </td>
+        </tr>
+      </table>
+    </div>
 
     <!-- COMPAT -->
-    <section class="section">
-      <h2>Compatibility</h2>
-      <div class="box">
-        <ul class="list">
-          <li>Odoo 17 / 18</li>
-          <li>Odoo Enterprise / Community</li>
-          <li>Works with the standard Odoo Website module</li>
+    <div style="margin-top:18px;">
+      <h2 style="margin:0 0 8px;font-size:20px;letter-spacing:-0.2px;">Compatibility</h2>
+      <div style="background:#ffffff;border:1px solid #e9edf6;border-radius:16px;padding:12px;box-shadow:0 6px 18px rgba(10,20,40,.06);">
+        <ul style="margin:0;padding-left:18px;color:#334155;font-size:13px;">
+          <li style="margin:6px 0;">Odoo 17 / 18</li>
+          <li style="margin:6px 0;">Enterprise / Community</li>
+          <li style="margin:6px 0;">Works with the standard Website module</li>
         </ul>
       </div>
-    </section>
+    </div>
 
-    <!-- INSTALL -->
-    <section class="section">
-      <h2>Installation</h2>
-      <div class="box">
-        <ol class="list">
-          <li>Install the module</li>
-          <li>Activate the theme</li>
-          <li>Use Website Builder to add pages & sections</li>
-          <li>Customize content and branding</li>
-        </ol>
-        <p class="muted" style="margin-top:8px;">No advanced technical setup required.</p>
-      </div>
-    </section>
-
-    <!-- SUPPORT -->
-    <section class="section">
-      <h2>Support</h2>
-      <div class="box">
-        <p class="muted">30 days support included after purchase.</p>
-        <ul class="list">
-          <li>Installation guidance</li>
-          <li>Basic configuration help</li>
-          <li>Minor display adjustments</li>
-        </ul>
-      </div>
-    </section>
-
-    <!-- CTA -->
-    <section class="cta">
-      <h3>Built for premium positioning.</h3>
-      <p>
-        NovaConsult Pro is not a generic theme — it is a structured foundation to build a cohesive,
-        modern and conversion-ready Odoo website.
-      </p>
-      <div class="pills">
-        <span class="pill-light">Premium UI</span>
-        <span class="pill-light">Scalable</span>
-        <span class="pill-light">Builder Compatible</span>
-        <span class="pill-light">Responsive</span>
-        <span class="pill-light">Agency Friendly</span>
-      </div>
-    </section>
-
-    <div class="footer">
+    <!-- FOOTER -->
+    <div style="margin-top:18px;padding-top:10px;border-top:1px solid #eef1fb;font-size:12px;color:#6b7387;display:block;">
       <div>© NovaConsult Pro • Odoo Theme</div>
-      <div class="muted">Place this file at <b>static/description/index.html</b></div>
+      <div style="color:#64748b;margin-top:4px;">File: <b>static/description/index.html</b></div>
     </div>
 
   </div>
-
-  <!-- LIGHTBOX POPUP -->
-  <div class="lb" id="lb" role="dialog" aria-modal="true" aria-hidden="true">
-    <div class="lb__dialog" role="document">
-      <div class="lb__bar">
-        <div class="lb__title" id="lbTitle">Preview</div>
-        <div class="lb__btns">
-          <button class="btn" id="lbPrev" type="button" aria-label="Previous">← Prev</button>
-          <button class="btn" id="lbNext" type="button" aria-label="Next">Next →</button>
-          <button class="btn btn-primary" id="lbClose" type="button" aria-label="Close">✕ Close</button>
-        </div>
-      </div>
-      <div class="lb__content">
-        <img id="lbImg" src="" alt="Preview image" />
-      </div>
-      <div class="lb__help">
-        Tip: use <span class="kbd">Esc</span> to close • <span class="kbd">←</span>/<span class="kbd">→</span> to navigate
-      </div>
-    </div>
-  </div>
-
-  <script>
-    (function(){
-      const shots = Array.from(document.querySelectorAll('.shot'));
-      const lb = document.getElementById('lb');
-      const lbImg = document.getElementById('lbImg');
-      const lbTitle = document.getElementById('lbTitle');
-      const btnClose = document.getElementById('lbClose');
-      const btnPrev = document.getElementById('lbPrev');
-      const btnNext = document.getElementById('lbNext');
-
-      let index = 0;
-
-      function openAt(i){
-        index = (i + shots.length) % shots.length;
-        const a = shots[index];
-        const href = a.getAttribute('href');
-        const title = a.getAttribute('data-title') || a.querySelector('.shot__label')?.textContent || 'Preview';
-        lbImg.src = href;
-        lbTitle.textContent = title;
-
-        lb.classList.add('is-open');
-        lb.setAttribute('aria-hidden', 'false');
-        document.body.style.overflow = 'hidden';
-      }
-
-      function close(){
-        lb.classList.remove('is-open');
-        lb.setAttribute('aria-hidden', 'true');
-        document.body.style.overflow = '';
-        lbImg.src = '';
-      }
-
-      function prev(){ openAt(index - 1); }
-      function next(){ openAt(index + 1); }
-
-      shots.forEach((a, i) => {
-        a.addEventListener('click', (e) => {
-          e.preventDefault();
-          openAt(i);
-        });
-      });
-
-      btnClose.addEventListener('click', close);
-      btnPrev.addEventListener('click', prev);
-      btnNext.addEventListener('click', next);
-
-      lb.addEventListener('click', (e) => {
-        if(e.target === lb) close();
-      });
-
-      document.addEventListener('keydown', (e) => {
-        if(!lb.classList.contains('is-open')) return;
-        if(e.key === 'Escape') close();
-        if(e.key === 'ArrowLeft') prev();
-        if(e.key === 'ArrowRight') next();
-      });
-    })();
-  </script>
 </body>
 </html>
