@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+  <template id="nova_footer_v1" name="Nova Footer V1">
+    <footer id="footer" class="o_footer th-nova nova-footer-v1 py-5">
+      <div class="container">
+
+        <div class="row g-4">
+
+          <!-- Brand -->
+          <div class="col-12 col-lg-4">
+            <a class="d-inline-flex align-items-center gap-2 text-decoration-none" href="/">
+              <img t-att-src="'/web/image/website/%s/logo' % website.id"
+                   t-att-alt="website.name"
+                   class="nova-brand-logo"
+                   loading="lazy"/>
+              <span class="nova-brand-text d-none d-sm-inline"><t t-esc="website.name"/></span>
+            </a>
+
+            <p class="nova-muted mt-3 mb-0">
+              High-conversion consulting theme built for Odoo.
+            </p>
+          </div>
+
+          <!-- Links (Main menu children) -->
+          <div class="col-6 col-lg-2">
+            <h6 class="nova-footer-title mb-3">Company</h6>
+            <ul class="list-unstyled m-0 nova-footer-links">
+              <t t-set="root_menu" t-value="website.menu_id"/>
+              <t t-foreach="root_menu.child_id[:6]" t-as="m">
+                <li class="mb-2">
+                  <a class="nova-footer-link"
+                     t-att-href="m.url"
+                     t-att-target="m.new_window and '_blank' or None">
+                    <t t-esc="m.name"/>
+                  </a>
+                </li>
+              </t>
+            </ul>
+          </div>
+
+          <!-- Quick links -->
+          <div class="col-6 col-lg-2">
+            <h6 class="nova-footer-title mb-3">Quick links</h6>
+            <ul class="list-unstyled m-0 nova-footer-links">
+              <li class="mb-2"><a class="nova-footer-link" href="/contactus">Contact</a></li>
+              <li class="mb-2"><a class="nova-footer-link" href="/aboutus">About</a></li>
+              <li class="mb-2"><a class="nova-footer-link" href="/privacy">Privacy</a></li>
+              <li class="mb-2"><a class="nova-footer-link" href="/terms">Terms</a></li>
+            </ul>
+          </div>
+
+<!-- Newsletter -->
+<div class="col-12 col-lg-4">
+  <h6 class="nova-footer-title mb-3">Newsletter</h6>
+  <p class="nova-muted mb-3">Monthly insights. No spam.</p>
+
+  <!-- Odoo Native Newsletter Subscribe Snippet -->
+  <div class="s_newsletter_subscribe_form s_newsletter_list js_subscribe o_we_snippet_area"
+       data-vxml="001"
+       data-list-id="0"
+       data-name="Newsletter Form"
+       data-snippet="s_newsletter_subscribe_form">
+
+    <!-- Success message -->
+    <div class="js_subscribed_wrap d-none">
+      <p class="nova-muted text-success mb-0">
+        <i class="fa fa-check-circle-o me-2" role="img"></i>
+        Thanks for registering!
+      </p>
+    </div>
+
+    <!-- Form -->
+    <div class="js_subscribe_wrap">
+      <div class="input-group">
+        <input type="email"
+               name="email"
+               class="js_subscribe_value form-control"
+               placeholder="johnsmith@example.com"
+               required="required"/>
+        <a role="button"
+           href="#"
+           class="btn btn-light nova-btn-accent js_subscribe_btn o_submit o_default_snippet_text">
+          Subscribe
+        </a>
+      </div>
+    </div>
+
+  </div>
+
+  <small class="nova-muted d-block mt-2">You can disable this block if you don’t need it.</small>
+</div>
+
+        </div>
+
+        <hr class="my-4" style="opacity:.12;"/>
+
+        <div class="d-flex flex-wrap justify-content-between align-items-center gap-2">
+          <small class="nova-muted">
+            © <t t-esc="datetime.datetime.now().year"/> <t t-esc="website.name"/>. All rights reserved.
+          </small>
+          <small class="nova-muted">
+            <a class="nova-footer-link" href="/privacy">Privacy</a> ·
+            <a class="nova-footer-link" href="/terms">Terms</a>
+          </small>
+        </div>
+
+      </div>
+    </footer>
+  </template>
+
+</odoo>

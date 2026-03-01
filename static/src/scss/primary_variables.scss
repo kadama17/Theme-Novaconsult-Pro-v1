@@ -1,0 +1,50 @@
+// NovaConsult Pro — Primary variables (palette + fonts)
+// Safe defaults to avoid "Undefined variable" during compilation
+$o-color-palettes: () !default;
+$o-selected-color-palettes-names: () !default;
+$o-website-values-palettes: () !default;
+$o-theme-font-configs: () !default;
+
+// Fonts
+$o-theme-font-configs: map-merge($o-theme-font-configs, (
+  'Inter': (
+    'family': ('Inter', system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif),
+  ),
+));
+
+// Palettes
+$o-color-palettes: map-merge($o-color-palettes, (
+  'novaconsult_dark': (
+    'o-color-1': #f3ff1a, // primary
+    'o-color-2': #22c55e, // secondary
+    'o-color-3': #e9eefc, // extra light
+    'o-color-4': #ffffff, // whitish
+    'o-color-5': #0b1020, // blackish
+  ),
+  'novaconsult_ocean': (
+    'o-color-1': #60a5fa,
+    'o-color-2': #22c55e,
+    'o-color-3': #e9eefc,
+    'o-color-4': #ffffff,
+    'o-color-5': #0b1020,
+  ),
+  'novaconsult_sand': (
+    'o-color-1': #f59e0b,
+    'o-color-2': #10b981,
+    'o-color-3': #fff7ed,
+    'o-color-4': #ffffff,
+    'o-color-5': #111827,
+  ),
+));
+
+// Make them selectable
+$o-selected-color-palettes-names: append($o-selected-color-palettes-names, 'novaconsult_dark');
+$o-selected-color-palettes-names: append($o-selected-color-palettes-names, 'novaconsult_ocean');
+$o-selected-color-palettes-names: append($o-selected-color-palettes-names, 'novaconsult_sand');
+
+// Default suggestions for website palette dropdown
+$o-website-values-palettes: (
+  ('color-palettes-name': 'novaconsult_dark'),
+  ('color-palettes-name': 'novaconsult_ocean'),
+  ('color-palettes-name': 'novaconsult_sand'),
+);

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+  <template id="s_nova_case_studies" name="NovaConsult — Case Studies">
+    <section class="th-nova section section--alt o_we_snippet o_colored_level"
+             data-snippet="s_text_block"
+             data-name="NovaConsult — Case Studies"
+             id="case">
+      <div class="sv-container">
+        <div class="sectionHead sectionHead--split">
+          <div class="o_we_snippet_area" data-name="Case — Head">
+            <h2>Case studies &amp; outcomes</h2>
+            <p>A few examples of what we deliver (results vary by context).</p>
+          </div>
+          <div class="o_we_snippet_area" data-name="Case — CTA">
+            <a class="btn btn--soft" href="#contact">See if it fits your case</a>
+          </div>
+        </div>
+
+        <div class="grid3 o_we_snippet_area" data-name="Case — Items">
+          <article class="case">
+            <div class="case__tag">SaaS</div>
+            <h3>Funnel + CRM overhaul</h3>
+            <p class="case__desc">Pipeline clarified, email sequences, lead scoring, weekly dashboard.</p>
+            <div class="case__kpis">
+              <div><span>+31%</span><small>Conversion</small></div>
+              <div><span>-18%</span><small>Churn</small></div>
+              <div><span>6 wks</span><small>Time-to-value</small></div>
+            </div>
+          </article>
+
+          <article class="case">
+            <div class="case__tag">E-commerce</div>
+            <h3>Checkout optimization</h3>
+            <p class="case__desc">Journey simplification, trust blocks, performance, event tracking.</p>
+            <div class="case__kpis">
+              <div><span>+22%</span><small>Revenue</small></div>
+              <div><span>-14%</span><small>Abandonment</small></div>
+              <div><span>3 wks</span><small>Delivery</small></div>
+            </div>
+          </article>
+
+          <article class="case">
+            <div class="case__tag">SMB</div>
+            <h3>Processes &amp; SOPs</h3>
+            <p class="case__desc">Templates, automations, rituals, documentation, clear ownership.</p>
+            <div class="case__kpis">
+              <div><span>-25%</span><small>Costs</small></div>
+              <div><span>+11h</span><small>/week</small></div>
+              <div><span>90 d</span><small>Stabilization</small></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </template>
+</odoo>

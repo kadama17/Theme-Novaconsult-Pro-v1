@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+<template id="s_novaconsult_services" name="NovaConsult — Services">
+  <section class="th-nova section o_we_snippet o_colored_level" data-snippet="s_novaconsult_services" data-name="NovaConsult — Services">
+    <div class="sv-container">
+      <div class="sectionHead">
+        <h2>What you get</h2>
+        <p>Reusable “service cards” aligned with your palette.</p>
+      </div>
+
+      <div class="grid3 oe_structure o_we_snippet_area" data-name="Services — Cards" id="services">
+        <div class="service o_we_snippet" data-snippet="s_text_block" data-name="Service — 1">
+          <div class="service__top">
+            <div class="service__icon">⚡</div>
+            <h3>Strategy</h3>
+          </div>
+          <p>Positioning, offer, messaging, and funnel structure.</p>
+          <ul class="list">
+            <li>ICP &amp; offers</li>
+            <li>Landing conversion</li>
+            <li>KPI definition</li>
+          </ul>
+        </div>
+
+        <div class="service o_we_snippet" data-snippet="s_text_block" data-name="Service — 2">
+          <div class="service__top">
+            <div class="service__icon">🧩</div>
+            <h3>Implementation</h3>
+          </div>
+          <p>Execution with clean, maintainable Odoo structure.</p>
+          <ul class="list">
+            <li>Snippets &amp; pages</li>
+            <li>Assets &amp; SCSS</li>
+            <li>Performance</li>
+          </ul>
+        </div>
+
+        <div class="service o_we_snippet" data-snippet="s_text_block" data-name="Service — 3">
+          <div class="service__top">
+            <div class="service__icon">📈</div>
+            <h3>Optimization</h3>
+          </div>
+          <p>Iterate based on data: tests, proof, and friction removal.</p>
+          <ul class="list">
+            <li>A/B ideas</li>
+            <li>Copy upgrades</li>
+            <li>Trust elements</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+</template>
+</odoo>

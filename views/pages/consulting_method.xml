@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+  <data>
+
+  <template id="page_consulting_method" name="Consulting — Method" page="True">
+
+
+<t name="NovaConsult — Method (EN)" t-name="website.consulting_method_novaconsult_en">
+  <t t-call="website.layout">
+    <div id="wrap" class="oe_structure th-nova o_consulting_method">
+
+      
+
+      <main class="o_we_snippet_area" data-name="Method Page">
+
+        <!-- HERO -->
+        <section class="o_we_snippet o_colored_level" data-snippet="s_text_block" data-name="Method - Hero">
+          <div class="sv-container">
+            <div class="pageHero">
+              <div class="oe_structure o_we_snippet_area" data-name="Hero - Content">
+                <section class="o_we_snippet o_colored_level" data-snippet="s_text_block" data-name="Hero - Kicker">
+                  <div class="kicker"><b>Method</b><span>A simple framework to avoid vague consulting.</span></div>
+                </section>
+
+                <section class="o_we_snippet o_colored_level" data-snippet="s_text_block" data-name="Hero - Title">
+                  <h1>From diagnosis to delivery — <span class="grad">in 4 steps</span>.</h1>
+                </section>
+
+                <section class="o_we_snippet o_colored_level" data-snippet="s_text_block" data-name="Hero - Lead">
+                  <p class="lead">
+                    We run structured workshops, define a realistic plan, execute with your team, and track KPIs
+                    to iterate fast. Everything is documented.
+                  </p>
+                </section>
+
+                <section class="o_we_snippet o_colored_level" data-snippet="s_text_block" data-name="Hero - Row">
+                  <div class="heroRow">
+                    <div class="heroActions">
+                      <a href="#steps" class="sv-btn sv-btn-primary">See the steps</a>
+                      <a href="#contact" class="sv-btn sv-btn-ghost">Request a diagnostic</a>
+                    </div>
+
+                    <div class="heroMeta">
+                      <div class="chip"><span/>Clear deliverables</div>
+                      <div class="chip"><span/>Weekly rituals</div>
+                      <div class="chip"><span/>Fast quick wins</div>
+                    </div>
+                  </div>
+                </section>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- STEPS -->
+        <section class="section section--alt o_we_snippet o_colored_level" data-snippet="s_text_block" data-name="Method - Steps" id="steps">
+          <div class="sv-container">
+            <div class="sectionHead oe_structure">
+              <h2>Our 4-step process</h2>
+              <p>Diagnosis → action plan → execution → optimization. Simple, measurable, repeatable.</p>
+            </div>
+
+            <div class="steps oe_structure o_we_snippet_area" data-name="Steps">
+              <article class="step o_we_snippet o_colored_level" data-snippet="s_text_block" data-name="Step 1">
+                <div class="num">1</div>
+                <div>
+                  <h3>Diagnosis</h3>
+                  <p>Interviews + data review + process audit. We identify the real bottlenecks and leverage points.</p>
+                </div>
+              </article>
+
+              <article class="step o_we_snippet o_colored_level" data-snippet="s_text_block" data-name="Step 2">
+                <div class="num">2</div>
+                <div>
+                  <h3>Action plan</h3>
+                  <p>30/60/90 roadmap: priorities, owners, dependencies, risks, and impact estimates.</p>
+                </div>
+              </article>
+
+              <article class="step o_we_snippet o_colored_level" data-snippet="s_text_block" data-name="Step 3">
+                <div class="num">3</div>
+                <div>
+                  <h3>Execution</h3>
+                  <p>We deliver with your team: workshops, implementation, testing, documentation, quick wins.</p>
+                </div>
+              </article>
+
+              <article class="step o_we_snippet o_colored_level" data-snippet="s_text_block" data-name="Step 4">
+                <div class="num">4</div>
+                <div>
+                  <h3>Optimization</h3>
+                  <p>KPI tracking + improvement loop. We stabilize the system and prepare the next phase.</p>
+                </div>
+              </article>
+            </div>
+
+            <!-- WHAT'S INSIDE -->
+            <div style="margin-top:18px;">
+              <div class="miniGrid oe_structure o_we_snippet_area" data-name="Method - Inside Cards">
+                <div class="miniCard o_we_snippet o_colored_level" data-snippet="s_text_block" data-name="Inside - Deliverables">
+                  <strong>Deliverables</strong>
+                  <span>Roadmap, docs, dashboards, templates — ready for the team.</span>
+                </div>
+                <div class="miniCard o_we_snippet o_colored_level" data-snippet="s_text_block" data-name="Inside - Workshops">
+                  <strong>Workshops</strong>
+                  <span>Structured sessions with clear outcomes and next steps.</span>
+                </div>
+                <div class="miniCard o_we_snippet o_colored_level" data-snippet="s_text_block" data-name="Inside - KPIs">
+                  <strong>KPI rituals</strong>
+                  <span>Weekly reviews: measure, learn, correct, repeat.</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="section o_we_snippet o_colored_level" data-snippet="s_text_block" data-name="Method - CTA" id="contact">
+          <div class="sv-container">
+            <div class="ctaBox">
+              <div class="oe_structure">
+                <strong>Want a clear roadmap in 7 days?</strong>
+                <span>Tell us your goal and current constraints — we’ll propose the best first step.</span>
+              </div>
+              <div class="oe_structure">
+                <a class="sv-btn sv-btn-primary" href="mailto:contact@novaconsult.com">Email us</a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+      </main>
+    </div>
+  </t>
+</t>
+
+    </template>
+
+      </data>
+
+</odoo>

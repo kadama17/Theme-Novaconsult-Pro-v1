@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+  <template id="s_nova_header" name="NovaConsult — Header">
+    <section class="th-nova  header o_we_snippet o_colored_level"
+             data-snippet="s_text_block"
+             data-name="NovaConsult — Header">
+      <div class="sv-container header__inner">
+
+        <div class="o_we_snippet_area" data-name="Header — Brand">
+          <a class="brand" href="#">
+            <span class="brand__mark">N</span>
+            <span class="brand__text">NovaConsult</span>
+          </a>
+        </div>
+
+        <nav class="nav o_we_snippet_area" data-name="Header — Nav">
+          <a href="#services">Services</a>
+          <a href="#method">Method</a>
+          <a href="#case">Case studies</a>
+          <a href="#pricing">Plans</a>
+          <a href="#faq">FAQ</a>
+        </nav>
+
+        <div class="header__cta o_we_snippet_area" data-name="Header — CTAs">
+          <a class="btn btn--ghost" href="#contact">Talk to an expert</a>
+          <a class="btn btn--primary" href="#pricing">View plans</a>
+        </div>
+
+      </div>
+    </section>
+  </template>
+</odoo>

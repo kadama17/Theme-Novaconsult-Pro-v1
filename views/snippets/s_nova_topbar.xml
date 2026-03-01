@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+  <template id="s_nova_topbar" key="theme_novaconsult_pro.s_nova_topbar" name="NovaConsult — Topbar">
+    <section class="th-nova topbar o_we_snippet o_colored_level"
+             data-snippet="s_novaconsult_topbar"
+             data-name="NovaConsult — Topbar">
+      <div class="sv-container topbar__inner">
+        <div class="topbar__left oe_structure o_we_snippet_area" data-name="Topbar — Left">
+          <span class="dot"></span>
+          <span>Available for audits &amp; missions (within 48h)</span>
+        </div>
+        <div class="topbar__right oe_structure o_we_snippet_area" data-name="Topbar — Right">
+          <a href="mailto:contact@novaconsult.com" class="topbar__link">contact@novaconsult.com</a>
+          <span class="sep">•</span>
+          <a href="tel:+212612345678" class="topbar__link">+212 6 12 34 56 78</a>
+        </div>
+      </div>
+    </section>
+  </template>
+</odoo>

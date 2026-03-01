@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+  <template id="s_nova_services" name="NovaConsult — Services">
+    <section class="th-nova section section--alt o_we_snippet o_colored_level"
+             data-snippet="s_text_block"
+             data-name="NovaConsult — Services"
+             id="services">
+      <div class="sv-container">
+        <div class="sectionHead sectionHead--split">
+          <div class="o_we_snippet_area" data-name="Services — Head">
+            <h2>Our consulting services</h2>
+            <p>Pick a focus area, or go end-to-end. We adapt to your stage (startup → SMB → scale-up).</p>
+          </div>
+          <div class="o_we_snippet_area" data-name="Services — CTA">
+            <a class="btn btn--ghost" href="#contact">Get a recommendation</a>
+          </div>
+        </div>
+
+        <div class="grid2 o_we_snippet_area" data-name="Services — Items">
+          <article class="service">
+            <div class="service__top">
+              <div class="service__icon">🧠</div>
+              <h3>Strategy &amp; positioning</h3>
+            </div>
+            <p>Offer, pricing, messaging, go-to-market, segmentation, value proposition. Clarify to sell better.</p>
+            <ul class="list">
+              <li>Market &amp; competitor audit</li>
+              <li>Offer design &amp; packaging</li>
+              <li>Multi-channel acquisition plan</li>
+            </ul>
+          </article>
+
+          <article class="service">
+            <div class="service__top">
+              <div class="service__icon">⚙️</div>
+              <h3>Processes &amp; operational excellence</h3>
+            </div>
+            <p>Reduce friction, build SOPs, automate, create templates, improve time management and team organization.</p>
+            <ul class="list">
+              <li>Process mapping</li>
+              <li>Standardization &amp; SOPs</li>
+              <li>Automation (no-code / ERP)</li>
+            </ul>
+          </article>
+
+          <article class="service">
+            <div class="service__top">
+              <div class="service__icon">📈</div>
+              <h3>Growth &amp; conversion</h3>
+            </div>
+            <p>Funnel optimization, CRO, analytics, CRM, email sequences, nurturing, and key-page optimization.</p>
+            <ul class="list">
+              <li>Conversion &amp; tracking audit</li>
+              <li>Landing &amp; checkout optimization</li>
+              <li>CRM playbooks + scripts</li>
+            </ul>
+          </article>
+
+          <article class="service">
+            <div class="service__top">
+              <div class="service__icon">🗂️</div>
+              <h3>Data &amp; performance management</h3>
+            </div>
+            <p>Define the right KPIs, consolidate data, build dashboards, and set up the right rituals.</p>
+            <ul class="list">
+              <li>North Star Metric</li>
+              <li>Executive dashboard</li>
+              <li>Weekly / monthly rituals</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+  </template>
+</odoo>

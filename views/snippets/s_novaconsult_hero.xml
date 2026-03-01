@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+  <template id="s_nova_logos" name="Nova — Client Logos">
+    <section class="th-nova o_we_snippet o_colored_level nova-logos py-5"
+             data-snippet="s_nova_logos"
+             data-name="Nova — Client Logos">
+
+      <div class="container">
+
+        <!-- Header -->
+        <div class="o_we_snippet_area mb-4" data-name="Header">
+          <h2 class="nova-h2">Trusted by ambitious brands</h2>
+          <p class="nova-muted">Companies that value structure and performance.</p>
+        </div>
+
+        <!-- Logos (editable area) -->
+        <div class="row g-4 o_we_snippet_area"
+             data-name="Logos"
+             data-oe-zone="nova_client_logos">
+
+          <!-- Item 1 (editable) -->
+          <div class="col-6 col-md-4 col-lg-3 o_we_snippet"
+               data-snippet="s_text_block"
+               data-name="Logo — Client">
+            <div class="nova-logo-card text-center p-4">
+              <div class="nova-logo-media">
+                <!-- Image remplaçable via Builder -->
+                <img src="/theme_novaconsult_pro/static/src/img/logo_placeholder.png"
+                     class="img-fluid nova-logo-img"
+                     alt="Client Logo"
+                     loading="lazy"/>
+              </div>
+
+              <!-- Texte éditable -->
+              <div class="nova-logo-name mt-3 o_we_snippet_area" data-name="Client Name">
+                <strong>Company Name</strong>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 2 (optionnel placeholder, tu peux en laisser plusieurs) -->
+          <div class="col-6 col-md-4 col-lg-3 o_we_snippet"
+               data-snippet="s_text_block"
+               data-name="Logo — Client">
+            <div class="nova-logo-card text-center p-4">
+              <div class="nova-logo-media">
+                <img src="/theme_novaconsult_pro/static/src/img/logo_placeholder.png"
+                     class="img-fluid nova-logo-img"
+                     alt="Client Logo"
+                     loading="lazy"/>
+              </div>
+              <div class="nova-logo-name mt-3 o_we_snippet_area" data-name="Client Name">
+                <strong>Company Name</strong>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+  </template>
+</odoo>

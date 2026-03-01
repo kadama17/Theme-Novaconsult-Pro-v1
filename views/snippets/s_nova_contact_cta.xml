@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+  <template id="s_nova_contact_cta" name="NovaConsult — Contact CTA">
+    <!-- IMPORTANT: snippet = s_website_form (pour avoir "Form + Field" à droite) -->
+    <section class="th-nova cta o_we_snippet o_colored_level s_website_form"
+             data-snippet="s_website_form"
+             data-name="NovaConsult — Contact CTA"
+             id="contact">
+
+      <div class="sv-container cta__grid">
+
+        <!-- Left -->
+        <div class="o_we_snippet_area" data-name="Contact — Pitch">
+          <h2>Want a quick diagnostic for your business?</h2>
+          <p>Answer 3 questions and we’ll propose a clear action plan (no commitment).</p>
+
+          <div class="cta__bullets">
+            <div class="bullet"><span>✓</span> KPIs &amp; priorities</div>
+            <div class="bullet"><span>✓</span> Quick wins</div>
+            <div class="bullet"><span>✓</span> 30/60/90 roadmap</div>
+          </div>
+        </div>
+
+        <!-- Right (Form wrapper in its own snippet area) -->
+        <div class="o_we_snippet_area" data-name="Contact — Form Wrapper">
+
+          <form id="nova_contact_cta_form"
+                action="/website/form/"
+                method="post"
+                enctype="multipart/form-data"
+                class="formCard o_mark_required s_website_form"
+                data-mark="*"
+                data-model_name="crm.lead"
+                data-success-mode="redirect"
+                data-success-page="/contactus-thank-you"
+                data-pre-fill="true">
+
+            <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()"/>
+
+            <!-- Required for crm.lead -->
+            <input type="hidden" name="name" value="Form request"/>
+
+            <!-- Email notification (to get "Recipient Email" behavior) -->
+            <!-- If you prefer configuring this from the right panel, remove the value and keep the field. -->
+            <input type="hidden" class="s_website_form_input" name="email_to" value="kadama328@gmail.com"/>
+
+            <!-- Optional subject for the email notification -->
+            <input type="hidden" class="s_website_form_input" name="subject" value="New Diagnostic Request (Website)"/>
+
+            <div class="s_website_form_rows row s_col_no_bgcolor">
+
+              <!-- Name -->
+              <div class="mb-3 col-12 s_website_form_field s_website_form_custom s_website_form_required"
+                   data-type="char"
+                   data-name="Field">
+                <label class="s_website_form_label" style="width:200px" for="nova_contact_name">
+                  <span class="s_website_form_label_content">Name</span>
+                  <span class="s_website_form_mark"> *</span>
+                </label>
+                <input id="nova_contact_name"
+                       type="text"
+                       class="form-control s_website_form_input"
+                       name="contact_name"
+                       required="required"/>
+              </div>
+
+              <!-- Email -->
+              <div class="mb-3 col-12 s_website_form_field s_website_form_custom s_website_form_required s_website_form_model_required"
+                   data-type="email"
+                   data-name="Field">
+                <label class="s_website_form_label" style="width:200px" for="nova_email">
+                  <span class="s_website_form_label_content">Email</span>
+                  <span class="s_website_form_mark"> *</span>
+                </label>
+                <input id="nova_email"
+                       type="email"
+                       class="form-control s_website_form_input"
+                       name="email_from"
+                       required="required"/>
+              </div>
+
+              <!-- Message -->
+              <div class="mb-3 col-12 s_website_form_field s_website_form_custom"
+                   data-type="text"
+                   data-name="Field">
+                <label class="s_website_form_label" style="width:200px" for="nova_description">
+                  <span class="s_website_form_label_content">Message</span>
+                </label>
+                <textarea id="nova_description"
+                          class="form-control s_website_form_input"
+                          name="description"
+                          rows="4"/>
+              </div>
+
+              <!-- Submit -->
+              <div class="mb-0 py-2 col-12 s_website_form_submit s_website_form_no_submit_label text-end"
+                   data-name="Submit Button">
+                <div style="width:200px" class="s_website_form_label"/>
+                <a href="#" role="button" class="btn btn--primary s_website_form_send">Send</a>
+                <span class="s_website_form_result"/>
+              </div>
+
+            </div>
+          </form>
+
+        </div>
+      </div>
+    </section>
+  </template>
+</odoo>

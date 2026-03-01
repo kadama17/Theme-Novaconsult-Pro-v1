@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+  <data>
+
+  <template id="page_consulting_contact" name="Consulting — Contact" page="True">
+
+
+        <t t-call="website.layout">
+            <div id="wrap" class="oe_structure th-nova o_consulting_contact">
+
+                <main class="o_we_snippet_area" data-name="Contact Page">
+
+                    <!-- HERO -->
+                    <section class="o_we_snippet o_colored_level" data-snippet="s_text_block">
+                        <div class="sv-container">
+                            <div class="pageHero">
+                                <div class="kicker">Contact</div>
+                                <h1>Request a diagnostic.</h1>
+                                <p class="lead">
+                                    Answer a few questions and we’ll propose a clear first step:
+                                    quick wins, roadmap, and KPIs.
+                                </p>
+
+                                <div class="infoGrid oe_structure o_we_snippet_area" data-name="Contact - Quick info">
+                                    <div class="info o_we_snippet o_colored_level" data-snippet="s_text_block">
+                                        <strong>Email</strong>
+                                        <span>contact@novaconsult.com</span>
+                                    </div>
+                                    <div class="info o_we_snippet o_colored_level" data-snippet="s_text_block">
+                                        <strong>Phone</strong>
+                                        <span>+212 6 12 34 56 78</span>
+                                    </div>
+                                    <div class="info o_we_snippet o_colored_level" data-snippet="s_text_block">
+                                        <strong>Location</strong>
+                                        <span>Casablanca • Remote</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- CTA + FORM -->
+                    <section class="section cta o_we_snippet o_colored_level" id="contact">
+                        <div class="sv-container">
+                            <div class="ctaGrid">
+
+                                <div class="oe_structure o_we_snippet_area">
+                                    <h2>Let’s clarify your priorities in 30 minutes.</h2>
+                                    <p class="p">
+                                        Tell us your main objective and current constraints.
+                                        We’ll suggest a realistic plan and the best starting offer.
+                                    </p>
+
+                                    <div class="bullets">
+                                        <div class="bullet"><b>✓</b> KPI &amp; priorities</div>
+                                        <div class="bullet"><b>✓</b> Quick wins</div>
+                                        <div class="bullet"><b>✓</b> 30/60/90 roadmap</div>
+                                    </div>
+                                </div>
+
+                                <div class="oe_structure o_we_snippet_area">
+                                    <div class="formCard">
+                                        <form action="#" method="post">
+
+                                            <div class="row">
+                                                <label>Name</label>
+                                                <input type="text" required="required"/>
+                                            </div>
+
+                                            <div class="row">
+                                                <label>Email</label>
+                                                <input type="email" required="required"/>
+                                            </div>
+
+                                            <div class="row">
+                                                <label>Main objective</label>
+                                                <select required="required">
+                                                    <option value="" selected="selected" disabled="disabled">Choose…</option>
+                                                    <option>Increase sales</option>
+                                                    <option>Improve processes</option>
+                                                    <option>Set KPIs / dashboard</option>
+                                                    <option>Improve conversion</option>
+                                                </select>
+                                            </div>
+
+                                            <div class="row">
+                                                <label>Message</label>
+                                                <textarea rows="4"></textarea>
+                                            </div>
+
+                                            <button class="btn btn-primary w-full" type="submit">Send</button>
+
+                                        </form>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </section>
+
+                </main>
+
+            </div>
+        </t>
+
+    </template>
+
+  </data>
+
+</odoo>

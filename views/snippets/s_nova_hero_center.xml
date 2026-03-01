@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+  <template id="s_nova_hero_center" name="Nova — Hero Centered">
+    <section class="th-nova o_we_snippet  nova-hero-center text-center"
+             data-snippet="s_nova_hero_center"
+             data-name="Nova — Hero Centered">
+
+      <div class="nova-hero-bg"></div>
+
+      <div class="container position-relative">
+
+        <div class="o_we_snippet_area py-6" data-name="Hero Content">
+
+          <h1 class="nova-h1 mb-3">
+            Architecting growth through intelligent systems.
+          </h1>
+
+          <p class="nova-muted mx-auto mb-4" style="max-width:680px;">
+            We design operational clarity, automation and scalable
+            digital infrastructures inside Odoo.
+          </p>
+
+          <div class="d-flex justify-content-center gap-3 flex-wrap">
+            <a href="#contact" class="btn btn-light nova-btn-accent">
+              Book Strategy Call
+            </a>
+            <a href="#case" class="btn btn-outline-light nova-btn-soft">
+              View Case Studies
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+  </template>
+</odoo>

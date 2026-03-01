@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+  <template id="s_nova_features" name="Nova — Features Grid">
+    <section class="th-nova o_we_snippet o_colored_level nova-features py-5"
+             data-snippet="s_nova_features"
+             data-name="Nova — Features Grid">
+
+     <div class="row g-3 o_we_snippet_area" data-name="Features">
+
+  <div class="col-12 col-md-6 col-lg-4">
+    <div class="nova-card p-4 h-100">
+      <div class="nova-feature-icon">★</div>
+      <h3 class="nova-h3 mt-3">Strategic clarity</h3>
+      <p class="nova-muted mb-0">
+        Structured roadmap and execution plan.
+      </p>
+    </div>
+  </div>
+
+  <div class="col-12 col-md-6 col-lg-4">
+    <div class="nova-card p-4 h-100">
+      <div class="nova-feature-icon">★</div>
+      <h3 class="nova-h3 mt-3">Automation</h3>
+      <p class="nova-muted mb-0">
+        Smart workflows inside Odoo.
+      </p>
+    </div>
+  </div>
+
+  <div class="col-12 col-md-6 col-lg-4">
+    <div class="nova-card p-4 h-100">
+      <div class="nova-feature-icon">★</div>
+      <h3 class="nova-h3 mt-3">Performance focus</h3>
+      <p class="nova-muted mb-0">
+        Everything measured, everything optimized.
+      </p>
+    </div>
+  </div>
+
+</div>
+    </section>
+  </template>
+</odoo>

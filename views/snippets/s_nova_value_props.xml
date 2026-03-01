@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+  <template id="s_nova_value_props" name="NovaConsult — Value Props">
+    <section class="th-nova section o_we_snippet o_colored_level"
+             data-snippet="s_text_block"
+             data-name="NovaConsult — Value Props">
+      <div class="sv-container">
+        <div class="sectionHead o_we_snippet_area" data-name="Value Props — Head">
+          <h2>Results-driven — no fluff.</h2>
+          <p>We combine strategy, delivery, and KPI governance. You know what to do, in what order, and how to measure it.</p>
+        </div>
+
+        <div class="grid3 o_we_snippet_area" data-name="Value Props — Cards">
+          <article class="card">
+            <div class="icon">⚡</div>
+            <h3>Quick wins</h3>
+            <p>Immediate actions to improve conversion, processes, and organization within the first two weeks.</p>
+          </article>
+          <article class="card">
+            <div class="icon">🧭</div>
+            <h3>Clear roadmap</h3>
+            <p>A 30/60/90-day plan with priorities, risks, dependencies, budgets, and owners.</p>
+          </article>
+          <article class="card">
+            <div class="icon">📊</div>
+            <h3>Measurement &amp; KPIs</h3>
+            <p>Readable dashboards + weekly rituals to track impact and course-correct quickly.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </template>
+</odoo>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+  <template id="s_nova_footer" name="NovaConsult — Footer">
+    <section class="th-nova footer o_we_snippet o_colored_level"
+             data-snippet="s_text_block"
+             data-name="NovaConsult — Footer">
+      <div class="sv-container footer__grid">
+        <div class="footer__brand o_we_snippet_area" data-name="Footer — Brand">
+          <div class="brand brand--footer">
+            <span class="brand__mark">N</span>
+            <span class="brand__text">NovaConsult</span>
+          </div>
+          <p>Strategic &amp; hands-on consulting: growth, processes, data, transformation.</p>
+        </div>
+
+        <div class="footer__col o_we_snippet_area" data-name="Footer — Col 1">
+          <h4>Services</h4>
+          <a href="#services">Strategy</a>
+          <a href="#services">Processes</a>
+          <a href="#services">Growth</a>
+          <a href="#services">Data</a>
+        </div>
+
+        <div class="footer__col o_we_snippet_area" data-name="Footer — Col 2">
+          <h4>Resources</h4>
+          <a href="#case">Case studies</a>
+          <a href="#faq">FAQ</a>
+          <a href="#pricing">Plans</a>
+          <a href="#contact">Contact</a>
+        </div>
+
+        <div class="footer__col o_we_snippet_area" data-name="Footer — Col 3">
+          <h4>Contact</h4>
+          <a href="mailto:contact@novaconsult.com">contact@novaconsult.com</a>
+          <a href="tel:+212612345678">+212 6 12 34 56 78</a>
+          <span class="muted">Casablanca • Remote</span>
+        </div>
+      </div>
+
+      <div class="sv-container footer__bottom o_we_snippet_area" data-name="Footer — Bottom">
+        <span>© 2026 NovaConsult. All rights reserved.</span>
+        <div class="footer__links">
+          <a href="#">Legal notice</a>
+          <a href="#">Privacy policy</a>
+        </div>
+      </div>
+    </section>
+  </template>
+</odoo>

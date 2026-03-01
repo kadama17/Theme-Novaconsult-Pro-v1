@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+  <template id="s_nova_stats" name="Nova — Stats / KPI">
+    <section class="th-nova o_we_snippet o_colored_level nova-stats py-5"
+             data-snippet="s_nova_stats"
+             data-name="Nova — Stats">
+
+      <div class="container">
+
+        <div class="o_we_snippet_area mb-4" data-name="Header">
+          <h2 class="nova-h2">Real results. Measurable impact.</h2>
+          <p class="nova-muted">Performance-driven execution.</p>
+        </div>
+
+        <div class="row g-3 o_we_snippet_area" data-name="Stats">
+          <div class="col-md-3 col-6">
+            <div class="nova-card p-4 text-center">
+              <div class="nova-kpi">+120%</div>
+              <div class="nova-kpi-label">Qualified leads</div>
+            </div>
+          </div>
+
+          <div class="col-md-3 col-6">
+            <div class="nova-card p-4 text-center">
+              <div class="nova-kpi">-35%</div>
+              <div class="nova-kpi-label">Operational time</div>
+            </div>
+          </div>
+
+          <div class="col-md-3 col-6">
+            <div class="nova-card p-4 text-center">
+              <div class="nova-kpi">4.8/5</div>
+              <div class="nova-kpi-label">Client satisfaction</div>
+            </div>
+          </div>
+
+          <div class="col-md-3 col-6">
+            <div class="nova-card p-4 text-center">
+              <div class="nova-kpi">14 days</div>
+              <div class="nova-kpi-label">Average MVP</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </template>
+</odoo>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+  <template id="s_nova_faq" name="NovaConsult — FAQ">
+    <section class="th-nova section o_we_snippet o_colored_level"
+             data-snippet="s_text_block"
+             data-name="NovaConsult — FAQ"
+             id="faq">
+      <div class="sv-container">
+        <div class="sectionHead o_we_snippet_area" data-name="FAQ — Head">
+          <h2>FAQ</h2>
+          <p>Quick answers before we start.</p>
+        </div>
+
+        <div class="faq o_we_snippet_area" data-name="FAQ — Items">
+          <details class="faqItem" open="open">
+            <summary>What types of companies do you work with?</summary>
+            <p>Startups, SMBs, and scale-ups: B2B, e-commerce, and services. The key is having a minimum level of traction.</p>
+          </details>
+          <details class="faqItem">
+            <summary>How long before we see results?</summary>
+            <p>Often quick wins within 10–14 days. Structural results are typically measured over 30–90 days.</p>
+          </details>
+          <details class="faqItem">
+            <summary>Do you also handle implementation?</summary>
+            <p>Yes: workshops + implementation (CRM, dashboards, processes, pages). Everything is documented for the team.</p>
+          </details>
+          <details class="faqItem">
+            <summary>How does ongoing support work?</summary>
+            <p>Weekly rituals, a KPI dashboard, and async support (Slack/WhatsApp/Email depending on the framework).</p>
+          </details>
+        </div>
+      </div>
+    </section>
+  </template>
+</odoo>

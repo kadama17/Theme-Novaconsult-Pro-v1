@@ -1,0 +1,573 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+  <data noupdate="1">
+
+    <record id="page_consulting_home" model="ir.ui.view">
+      <field name="name">Consulting — Home</field>
+      <field name="type">qweb</field>
+      <field name="key">theme_novaconsult_pro.page_consulting_home</field>
+      <field name="arch" type="xml">
+<t t-name="theme_novaconsult_pro.page_consulting_home">
+<!-- Website Page -->
+    
+      <t t-call="website.layout">
+        <div id="wrap" class="oe_structure th-nova o_consulting_dark">
+
+          <div class="oe_structure o_we_snippet_area" data-name="NovaConsult Page">
+
+            <!-- Topbar -->
+            <section class="topbar o_we_snippet o_colored_level"
+                     data-snippet="s_text_block"
+                     data-name="Topbar">
+              <div class="sv-container topbar__inner">
+                <div class="topbar__left">
+                  <span class="dot"></span>
+                  <span>Available for audits &amp; missions (within 48h)</span>
+                </div>
+                <div class="topbar__right">
+                  <a href="mailto:contact@novaconsult.com" class="topbar__link">contact@novaconsult.com</a>
+                  <span class="sep">•</span>
+                  <a href="tel:+212612345678" class="topbar__link">+212 6 12 34 56 78</a>
+                </div>
+              </div>
+            </section>
+
+            <!-- Header -->
+            <section class="header o_we_snippet o_colored_level"
+                     data-snippet="s_text_block"
+                     data-name="Header">
+              <div class="sv-container header__inner">
+                <a class="brand" href="#">
+                  <span class="brand__mark">N</span>
+                  <span class="brand__text">NovaConsult</span>
+                </a>
+
+                <nav class="nav">
+                  <a href="#services">Services</a>
+                  <a href="#method">Method</a>
+                  <a href="#case">Case studies</a>
+                  <a href="#pricing">Plans</a>
+                  <a href="#faq">FAQ</a>
+                </nav>
+
+                <div class="header__cta">
+                  <a class="btn btn--ghost" href="#contact">Talk to an expert</a>
+                  <a class="btn btn--primary" href="#pricing">View plans</a>
+                </div>
+              </div>
+            </section>
+
+            <!-- Hero -->
+            <section class="hero o_we_snippet o_colored_level"
+                     data-snippet="s_text_block"
+                     data-name="Hero">
+              <div class="sv-container hero__grid">
+                <div class="hero__content">
+                  <div class="pill">
+                    <span class="pill__badge">New</span>
+                    <span>Audit + roadmap delivered in 7 days</span>
+                  </div>
+
+                  <h1 class="hero__title">
+                    Accelerate growth with a consulting agency that is
+                    <span class="grad">strategic + hands-on</span>.
+                  </h1>
+
+                  <p class="hero__lead">
+                    Strategy, processes, data, digital transformation: we structure execution, clarify priorities,
+                    and install actionable KPIs so you can scale sustainably.
+                  </p>
+
+                  <div class="hero__actions">
+                    <a class="btn btn--primary btn--lg" href="#contact">Request a diagnostic</a>
+                    <a class="btn btn--soft btn--lg" href="#case">See outcomes</a>
+                  </div>
+
+                  <div class="hero__proof">
+                    <div class="metric">
+                      <div class="metric__value">+38%</div>
+                      <div class="metric__label">average growth</div>
+                    </div>
+                    <div class="metric">
+                      <div class="metric__value">-22%</div>
+                      <div class="metric__label">operational costs</div>
+                    </div>
+                    <div class="metric">
+                      <div class="metric__value">4.9/5</div>
+                      <div class="metric__label">client satisfaction</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="hero__visual">
+                  <div class="glassCard">
+                    <div class="glassCard__top">
+                      <div class="avatarRow">
+                        <div class="avatar"></div>
+                        <div class="avatar"></div>
+                        <div class="avatar"></div>
+                        <span class="avatarRow__txt">120+ clients supported</span>
+                      </div>
+                      <div class="miniKpi">
+                        <span class="miniKpi__label">Pipeline</span>
+                        <span class="miniKpi__value">€ 1.24M</span>
+                      </div>
+                    </div>
+
+                    <div class="chartMock">
+                      <div class="chartMock__bar" style="--h: 42%"></div>
+                      <div class="chartMock__bar" style="--h: 70%"></div>
+                      <div class="chartMock__bar" style="--h: 58%"></div>
+                      <div class="chartMock__bar" style="--h: 86%"></div>
+                      <div class="chartMock__bar" style="--h: 63%"></div>
+                      <div class="chartMock__bar" style="--h: 92%"></div>
+                    </div>
+
+                    <div class="glassCard__bottom">
+                      <div class="badge"><span class="badge__dot"></span> Weekly ROI tracking</div>
+                      <div class="badge"><span class="badge__dot"></span> 90-day roadmap</div>
+                      <div class="badge"><span class="badge__dot"></span> Quick wins within 14 days</div>
+                    </div>
+                  </div>
+
+                  <div class="floatingCard floatingCard--a">
+                    <div class="floatingCard__title">Execution score</div>
+                    <div class="floatingCard__big">8.6/10</div>
+                    <div class="floatingCard__sub">+1.4 this month</div>
+                  </div>
+
+                  <div class="floatingCard floatingCard--b">
+                    <div class="floatingCard__title">Time saved</div>
+                    <div class="floatingCard__big">+11h</div>
+                    <div class="floatingCard__sub">per week</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="sv-container logos">
+                <p class="logos__label">Trusted by teams</p>
+                <div class="logos__row">
+                  <div class="logoBox">Atlas</div>
+                  <div class="logoBox">Cobalt</div>
+                  <div class="logoBox">Helios</div>
+                  <div class="logoBox">North</div>
+                  <div class="logoBox">Vertex</div>
+                </div>
+              </div>
+            </section>
+
+            <!-- Value Props -->
+            <section class="section o_we_snippet o_colored_level" data-snippet="s_text_block" data-name="Value Props">
+              <div class="sv-container">
+                <div class="sectionHead">
+                  <h2>Results-driven — no fluff.</h2>
+                  <p>We combine strategy, delivery, and KPI governance. You know what to do, in what order, and how to measure it.</p>
+                </div>
+
+                <div class="grid3">
+                  <article class="card">
+                    <div class="icon">⚡</div>
+                    <h3>Quick wins</h3>
+                    <p>Immediate actions to improve conversion, processes, and organization within the first two weeks.</p>
+                  </article>
+                  <article class="card">
+                    <div class="icon">🧭</div>
+                    <h3>Clear roadmap</h3>
+                    <p>A 30/60/90-day plan with priorities, risks, dependencies, budgets, and owners.</p>
+                  </article>
+                  <article class="card">
+                    <div class="icon">📊</div>
+                    <h3>Measurement &amp; KPIs</h3>
+                    <p>Readable dashboards + weekly rituals to track impact and course-correct quickly.</p>
+                  </article>
+                </div>
+              </div>
+            </section>
+
+            <!-- Services -->
+            <section class="section section--alt o_we_snippet o_colored_level" data-snippet="s_text_block" data-name="Services" id="services">
+              <div class="sv-container">
+                <div class="sectionHead sectionHead--split">
+                  <div>
+                    <h2>Our consulting services</h2>
+                    <p>Pick a focus area, or go end-to-end. We adapt to your stage (startup → SMB → scale-up).</p>
+                  </div>
+                  <a class="btn btn--ghost" href="#contact">Get a recommendation</a>
+                </div>
+
+                <div class="grid2">
+                  <article class="service">
+                    <div class="service__top">
+                      <div class="service__icon">🧠</div>
+                      <h3>Strategy &amp; positioning</h3>
+                    </div>
+                    <p>Offer, pricing, messaging, go-to-market, segmentation, value proposition. Clarify to sell better.</p>
+                    <ul class="list">
+                      <li>Market &amp; competitor audit</li>
+                      <li>Offer design &amp; packaging</li>
+                      <li>Multi-channel acquisition plan</li>
+                    </ul>
+                  </article>
+
+                  <article class="service">
+                    <div class="service__top">
+                      <div class="service__icon">⚙️</div>
+                      <h3>Processes &amp; operational excellence</h3>
+                    </div>
+                    <p>Reduce friction, build SOPs, automate, create templates, improve time management and team organization.</p>
+                    <ul class="list">
+                      <li>Process mapping</li>
+                      <li>Standardization &amp; SOPs</li>
+                      <li>Automation (no-code / ERP)</li>
+                    </ul>
+                  </article>
+
+                  <article class="service">
+                    <div class="service__top">
+                      <div class="service__icon">📈</div>
+                      <h3>Growth &amp; conversion</h3>
+                    </div>
+                    <p>Funnel optimization, CRO, analytics, CRM, email sequences, nurturing, and key-page optimization.</p>
+                    <ul class="list">
+                      <li>Conversion &amp; tracking audit</li>
+                      <li>Landing &amp; checkout optimization</li>
+                      <li>CRM playbooks + scripts</li>
+                    </ul>
+                  </article>
+
+                  <article class="service">
+                    <div class="service__top">
+                      <div class="service__icon">🗂️</div>
+                      <h3>Data &amp; performance management</h3>
+                    </div>
+                    <p>Define the right KPIs, consolidate data, build dashboards, and set up the right rituals.</p>
+                    <ul class="list">
+                      <li>North Star Metric</li>
+                      <li>Executive dashboard</li>
+                      <li>Weekly / monthly rituals</li>
+                    </ul>
+                  </article>
+                </div>
+              </div>
+            </section>
+
+            <!-- Method -->
+            <section class="section o_we_snippet o_colored_level" data-snippet="s_text_block" data-name="Method" id="method">
+              <div class="sv-container">
+                <div class="sectionHead">
+                  <h2>Our 4-step method</h2>
+                  <p>A simple framework that avoids vague engagements: diagnose → plan → execute → optimize.</p>
+                </div>
+
+                <div class="steps">
+                  <div class="step">
+                    <div class="step__num">1</div>
+                    <div>
+                      <h3>Diagnosis</h3>
+                      <p>Interviews + data analysis + process audit. We identify levers and blockers.</p>
+                    </div>
+                  </div>
+                  <div class="step">
+                    <div class="step__num">2</div>
+                    <div>
+                      <h3>Action plan</h3>
+                      <p>30/60/90 roadmap, prioritization, impact estimates, owners, dependencies.</p>
+                    </div>
+                  </div>
+                  <div class="step">
+                    <div class="step__num">3</div>
+                    <div>
+                      <h3>Execution</h3>
+                      <p>We deliver with your team: workshops, documentation, implementation, tests, quick wins.</p>
+                    </div>
+                  </div>
+                  <div class="step">
+                    <div class="step__num">4</div>
+                    <div>
+                      <h3>Optimization</h3>
+                      <p>KPI tracking + continuous improvement loop. We stabilize and prepare the next phase.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <!-- Case studies -->
+            <section class="section section--alt o_we_snippet o_colored_level" data-snippet="s_text_block" data-name="Case Studies" id="case">
+              <div class="sv-container">
+                <div class="sectionHead sectionHead--split">
+                  <div>
+                    <h2>Case studies &amp; outcomes</h2>
+                    <p>A few examples of what we deliver (results vary by context).</p>
+                  </div>
+                  <a class="btn btn--soft" href="#contact">See if it fits your case</a>
+                </div>
+
+                <div class="grid3">
+                  <article class="case">
+                    <div class="case__tag">SaaS</div>
+                    <h3>Funnel + CRM overhaul</h3>
+                    <p class="case__desc">Pipeline clarified, email sequences, lead scoring, weekly dashboard.</p>
+                    <div class="case__kpis">
+                      <div><span>+31%</span><small>Conversion</small></div>
+                      <div><span>-18%</span><small>Churn</small></div>
+                      <div><span>6 wks</span><small>Time-to-value</small></div>
+                    </div>
+                  </article>
+
+                  <article class="case">
+                    <div class="case__tag">E-commerce</div>
+                    <h3>Checkout optimization</h3>
+                    <p class="case__desc">Journey simplification, trust blocks, performance, event tracking.</p>
+                    <div class="case__kpis">
+                      <div><span>+22%</span><small>Revenue</small></div>
+                      <div><span>-14%</span><small>Abandonment</small></div>
+                      <div><span>3 wks</span><small>Delivery</small></div>
+                    </div>
+                  </article>
+
+                  <article class="case">
+                    <div class="case__tag">SMB</div>
+                    <h3>Processes &amp; SOPs</h3>
+                    <p class="case__desc">Templates, automations, rituals, documentation, clear ownership.</p>
+                    <div class="case__kpis">
+                      <div><span>-25%</span><small>Costs</small></div>
+                      <div><span>+11h</span><small>/week</small></div>
+                      <div><span>90 d</span><small>Stabilization</small></div>
+                    </div>
+                  </article>
+                </div>
+              </div>
+            </section>
+
+            <!-- Testimonials -->
+            <section class="section o_we_snippet o_colored_level" data-snippet="s_text_block" data-name="Testimonials">
+              <div class="sv-container">
+                <div class="sectionHead">
+                  <h2>What clients say</h2>
+                  <p>Clear, structured, actionable. We work transparently and document everything.</p>
+                </div>
+
+                <div class="grid3">
+                  <figure class="quote">
+                    <blockquote>“We finally have a realistic roadmap. The KPIs are simple and everyone knows what to do.”</blockquote>
+                    <figcaption>
+                      <span class="quote__name">Samira A.</span>
+                      <span class="quote__role">CEO, B2B SaaS</span>
+                    </figcaption>
+                  </figure>
+                  <figure class="quote">
+                    <blockquote>“Results in 2 weeks. The quick wins paid for the engagement.”</blockquote>
+                    <figcaption>
+                      <span class="quote__name">Yassine M.</span>
+                      <span class="quote__role">Head of Growth</span>
+                    </figcaption>
+                  </figure>
+                  <figure class="quote">
+                    <blockquote>“The process work transformed delivery. Less chaos — everything is standardized.”</blockquote>
+                    <figcaption>
+                      <span class="quote__name">Nadia K.</span>
+                      <span class="quote__role">COO, SMB</span>
+                    </figcaption>
+                  </figure>
+                </div>
+              </div>
+            </section>
+
+            <!-- Pricing -->
+            <section class="section section--alt o_we_snippet o_colored_level" data-snippet="s_text_block" data-name="Pricing" id="pricing">
+              <div class="sv-container">
+                <div class="sectionHead">
+                  <h2>Simple plans</h2>
+                  <p>Start small with a diagnostic, then move to monthly support to execute and measure.</p>
+                </div>
+
+                <div class="pricing">
+                  <article class="plan">
+                    <div class="plan__head">
+                      <h3>Starter</h3>
+                      <p>For quick clarity</p>
+                    </div>
+                    <div class="plan__price">
+                      <span class="plan__amount">€490</span>
+                      <span class="plan__period">/ diagnostic</span>
+                    </div>
+                    <ul class="list">
+                      <li>Express audit (90 min)</li>
+                      <li>Priorities &amp; quick wins</li>
+                      <li>14-day plan</li>
+                    </ul>
+                    <a class="btn btn--soft w-full" href="#contact">Choose Starter</a>
+                  </article>
+
+                  <article class="plan plan--featured">
+                    <div class="plan__ribbon">Most popular</div>
+                    <div class="plan__head">
+                      <h3>Growth</h3>
+                      <p>Execute + measure</p>
+                    </div>
+                    <div class="plan__price">
+                      <span class="plan__amount">€1,490</span>
+                      <span class="plan__period">/ month</span>
+                    </div>
+                    <ul class="list">
+                      <li>30/60/90 roadmap</li>
+                      <li>2 workshops / week</li>
+                      <li>KPI dashboard</li>
+                      <li>Unlimited async support</li>
+                    </ul>
+                    <a class="btn btn--primary w-full" href="#contact">Choose Growth</a>
+                  </article>
+
+                  <article class="plan">
+                    <div class="plan__head">
+                      <h3>Scale</h3>
+                      <p>Structure the organization</p>
+                    </div>
+                    <div class="plan__price">
+                      <span class="plan__amount">€2,990</span>
+                      <span class="plan__period">/ month</span>
+                    </div>
+                    <ul class="list">
+                      <li>Complete processes &amp; SOPs</li>
+                      <li>Automation &amp; tooling</li>
+                      <li>Team training</li>
+                      <li>Rituals + governance</li>
+                    </ul>
+                    <a class="btn btn--soft w-full" href="#contact">Choose Scale</a>
+                  </article>
+                </div>
+
+                <div class="note">
+                  <strong>Note:</strong> Prices are indicative. We can adapt based on scope, timing, and team size.
+                </div>
+              </div>
+            </section>
+
+            <!-- FAQ -->
+            <section class="section o_we_snippet o_colored_level" data-snippet="s_text_block" data-name="FAQ" id="faq">
+              <div class="sv-container">
+                <div class="sectionHead">
+                  <h2>FAQ</h2>
+                  <p>Quick answers before we start.</p>
+                </div>
+
+                <div class="faq">
+                  <details class="faqItem" open="open">
+                    <summary>What types of companies do you work with?</summary>
+                    <p>Startups, SMBs, and scale-ups: B2B, e-commerce, and services. The key is having a minimum level of traction.</p>
+                  </details>
+                  <details class="faqItem">
+                    <summary>How long before we see results?</summary>
+                    <p>Often quick wins within 10–14 days. Structural results are typically measured over 30–90 days.</p>
+                  </details>
+                  <details class="faqItem">
+                    <summary>Do you also handle implementation?</summary>
+                    <p>Yes: workshops + implementation (CRM, dashboards, processes, pages). Everything is documented for the team.</p>
+                  </details>
+                  <details class="faqItem">
+                    <summary>How does ongoing support work?</summary>
+                    <p>Weekly rituals, a KPI dashboard, and async support (Slack/WhatsApp/Email depending on the framework).</p>
+                  </details>
+                </div>
+              </div>
+            </section>
+
+            <!-- Contact CTA -->
+            <section class="cta o_we_snippet o_colored_level" data-snippet="s_text_block" data-name="Contact CTA" id="contact">
+              <div class="sv-container cta__grid">
+                <div>
+                  <h2>Want a quick diagnostic for your business?</h2>
+                  <p>Answer 3 questions and we’ll propose a clear action plan (no commitment).</p>
+
+                  <div class="cta__bullets">
+                    <div class="bullet"><span>✓</span> KPIs &amp; priorities</div>
+                    <div class="bullet"><span>✓</span> Quick wins</div>
+                    <div class="bullet"><span>✓</span> 30/60/90 roadmap</div>
+                  </div>
+                </div>
+
+                <form class="formCard" action="#" method="post">
+                  <div class="formRow">
+                    <label>Name</label>
+                    <input type="text" placeholder="Your name" required="required"/>
+                  </div>
+                  <div class="formRow">
+                    <label>Email</label>
+                    <input type="email" placeholder="you@company.com" required="required"/>
+                  </div>
+                  <div class="formRow">
+                    <label>Main goal</label>
+                    <select required="required">
+                      <option value="" disabled="disabled" selected="selected">Select…</option>
+                      <option>Increase sales</option>
+                      <option>Structure processes</option>
+                      <option>Set up KPIs / dashboard</option>
+                      <option>Improve conversion</option>
+                    </select>
+                  </div>
+                  <div class="formRow">
+                    <label>Message</label>
+                    <textarea rows="4" placeholder="Describe your situation in 2–3 lines…"></textarea>
+                  </div>
+                  <button class="btn btn--primary w-full" type="submit">Send</button>
+                  <p class="formHint">Reply within 24–48 business hours.</p>
+                </form>
+              </div>
+            </section>
+
+            <!-- Footer -->
+            <section class="footer o_we_snippet o_colored_level" data-snippet="s_text_block" data-name="Footer">
+              <div class="sv-container footer__grid">
+                <div class="footer__brand">
+                  <div class="brand brand--footer">
+                    <span class="brand__mark">N</span>
+                    <span class="brand__text">NovaConsult</span>
+                  </div>
+                  <p>Strategic &amp; hands-on consulting: growth, processes, data, transformation.</p>
+                </div>
+
+                <div class="footer__col">
+                  <h4>Services</h4>
+                  <a href="#services">Strategy</a>
+                  <a href="#services">Processes</a>
+                  <a href="#services">Growth</a>
+                  <a href="#services">Data</a>
+                </div>
+
+                <div class="footer__col">
+                  <h4>Resources</h4>
+                  <a href="#case">Case studies</a>
+                  <a href="#faq">FAQ</a>
+                  <a href="#pricing">Plans</a>
+                  <a href="#contact">Contact</a>
+                </div>
+
+                <div class="footer__col">
+                  <h4>Contact</h4>
+                  <a href="mailto:contact@novaconsult.com">contact@novaconsult.com</a>
+                  <a href="tel:+212612345678">+212 6 12 34 56 78</a>
+                  <span class="muted">Casablanca • Remote</span>
+                </div>
+              </div>
+
+              <div class="sv-container footer__bottom">
+                <span>© <t t-esc="time.strftime('%Y')"/> NovaConsult. All rights reserved.</span>
+                <div class="footer__links">
+                  <a href="#">Legal notice</a>
+                  <a href="#">Privacy policy</a>
+                </div>
+              </div>
+            </section>
+
+          </div>
+        </div>
+      </t>
+</t>
+      </field>
+    </record>
+
+
+
+  </data>
+</odoo>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+<template id="nova_header_v1" name="Nova Header V1">
+  <header id="top" class="o_header_standard th-nova nova-header-v1">
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+
+      <!-- Logo (Website logo) -->
+<a class="navbar-brand d-flex align-items-center gap-2" href="/">
+  <img t-att-src="'/web/image/website/%s/logo' % website.id"
+       t-att-alt="website.name"
+       class="nova-brand-logo"
+       loading="lazy"/>
+</a>
+        <!-- Mobile toggle -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#novaNavbarV1">
+          <span class="navbar-toggler-icon"/>
+        </button>
+
+        <!-- Menu -->
+        <div id="novaNavbarV1" class="collapse navbar-collapse">
+
+          <ul class="navbar-nav ms-auto gap-lg-2">
+            <t t-set="root_menu" t-value="website.menu_id"/>
+            <t t-foreach="root_menu.child_id" t-as="m">
+              <li class="nav-item">
+                <a class="nav-link"
+                   t-att-href="m.url"
+                   t-att-target="m.new_window and '_blank' or None">
+                  <t t-esc="m.name"/>
+                </a>
+              </li>
+            </t>
+          </ul>
+
+          <div class="d-flex ms-lg-3 mt-3 mt-lg-0 gap-2">
+            <a class="btn btn-light nova-btn-accent" href="#pricing">Get a quote</a>
+          </div>
+
+        </div>
+
+      </div>
+    </nav>
+  </header>
+</template>
+
+</odoo>

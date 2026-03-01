@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+  <data>
+
+  <template id="page_consulting_cases" name="Consulting — Cases" page="True">
+
+
+        <t t-call="website.layout">
+            <div id="wrap" class="oe_structure th-nova o_consulting_cases">
+
+                <main class="o_we_snippet_area" data-name="Case Studies Page">
+
+                    <!-- HERO -->
+                    <section class="o_we_snippet o_colored_level" data-snippet="s_text_block">
+                        <div class="sv-container">
+                            <div class="pageHero">
+                                <div class="kicker">Client results</div>
+                                <h1>Real projects.<br/>Measurable outcomes.</h1>
+                                <p class="lead">
+                                    A selection of missions where strategy, execution, and KPI tracking
+                                    delivered concrete business impact.
+                                </p>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- CASES -->
+                    <section class="section o_we_snippet o_colored_level" data-snippet="s_text_block">
+                        <div class="sv-container">
+
+                            <div class="sectionHead">
+                                <h2>Selected case studies</h2>
+                                <p>Results vary depending on context, but our approach stays the same.</p>
+                            </div>
+
+                            <div class="grid oe_structure o_we_snippet_area" data-name="Case grid">
+
+                                <article class="case o_we_snippet o_colored_level" data-snippet="s_text_block">
+                                    <span class="tag">B2B SaaS</span>
+                                    <h3>Sales funnel &amp; CRM redesign</h3>
+                                    <p class="desc">
+                                        Pipeline clarified, lead scoring implemented, weekly KPI rituals.
+                                    </p>
+                                    <div class="kpis">
+                                        <div><strong>+31%</strong><span>Conversion</span></div>
+                                        <div><strong>-18%</strong><span>Churn</span></div>
+                                        <div><strong>6 w</strong><span>Time-to-value</span></div>
+                                    </div>
+                                </article>
+
+                                <article class="case o_we_snippet o_colored_level" data-snippet="s_text_block">
+                                    <span class="tag">E-commerce</span>
+                                    <h3>Checkout &amp; CRO optimization</h3>
+                                    <p class="desc">
+                                        Simplified checkout, trust blocks, performance &amp; analytics cleanup.
+                                    </p>
+                                    <div class="kpis">
+                                        <div><strong>+22%</strong><span>Revenue</span></div>
+                                        <div><strong>-14%</strong><span>Abandonment</span></div>
+                                        <div><strong>3 w</strong><span>Delivery</span></div>
+                                    </div>
+                                </article>
+
+                                <article class="case o_we_snippet o_colored_level" data-snippet="s_text_block">
+                                    <span class="tag">SME</span>
+                                    <h3>Process &amp; SOP structuring</h3>
+                                    <p class="desc">
+                                        End-to-end process mapping, templates, automation, ownership.
+                                    </p>
+                                    <div class="kpis">
+                                        <div><strong>-25%</strong><span>Costs</span></div>
+                                        <div><strong>+11h</strong><span>/week</span></div>
+                                        <div><strong>90 d</strong><span>Stabilization</span></div>
+                                    </div>
+                                </article>
+
+                            </div>
+
+                            <!-- CTA -->
+                            <div class="ctaBox">
+                                <div>
+                                    <strong>Want similar results?</strong>
+                                    <span style="display:block;color:var(--muted);font-weight:650;">
+                                        Let’s see if our approach fits your context.
+                                    </span>
+                                </div>
+                                <a href="#contact" class="btn">Request a diagnostic</a>
+                            </div>
+
+                        </div>
+                    </section>
+
+                </main>
+
+            </div>
+        </t>
+
+    </template>
+  </data>
+
+</odoo>

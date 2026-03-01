@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+  <template id="snippets" inherit_id="website.snippets" name="NovaConsult - Snippets">
+
+    <!-- Create the NovaConsult group -->
+    <xpath expr="//snippets[@id='snippet_groups']/*[1]" position="before">
+      <t snippet-group="novaconsult" t-snippet="website.s_snippet_group"
+         string="NovaConsult"
+         t-thumbnail="/theme_novaconsult_pro/static/src/img/wbuilder/group_novaconsult.svg"/>
+    </xpath>
+
+    <!-- Add all snippets to the group -->
+    <xpath expr="//snippets[@id='snippet_structure']/*[1]" position="before">
+
+      <!-- TOPBAR -->
+      <t t-snippet="theme_novaconsult_pro.s_nova_topbar"
+         string="Topbar (NovaConsult)"
+         group="novaconsult"
+         t-thumbnail="/theme_novaconsult_pro/static/src/img/wbuilder/s_hero.svg">
+        <keywords>topbar header contact</keywords>
+      </t>
+
+      <!-- HEADER -->
+      <t t-snippet="theme_novaconsult_pro.s_nova_header"
+         string="Header (NovaConsult)"
+         group="novaconsult"
+         t-thumbnail="/theme_novaconsult_pro/static/src/img/wbuilder/s_hero.svg">
+        <keywords>navbar navigation menu</keywords>
+      </t>
+
+      <!-- HERO Classic -->
+      <t t-snippet="theme_novaconsult_pro.s_nova_hero"
+         string="Hero — Classic (NovaConsult)"
+         group="novaconsult"
+         t-thumbnail="/theme_novaconsult_pro/static/src/img/wbuilder/s_hero.svg">
+        <keywords>hero consulting b2b</keywords>
+      </t>
+
+      <!-- HERO Split -->
+      <t t-snippet="theme_novaconsult_pro.s_nova_hero_split"
+         string="Hero — Split (NovaConsult)"
+         group="novaconsult"
+         t-thumbnail="/theme_novaconsult_pro/static/src/img/wbuilder/s_hero.svg">
+        <keywords>hero split mockup image</keywords>
+      </t>
+
+      <!-- HERO Centered -->
+      <t t-snippet="theme_novaconsult_pro.s_nova_hero_center"
+         string="Hero — Centered (NovaConsult)"
+         group="novaconsult"
+         t-thumbnail="/theme_novaconsult_pro/static/src/img/wbuilder/s_hero.svg">
+        <keywords>hero centered gradient bold</keywords>
+      </t>
+
+      <!-- LOGOS / CLIENTS -->
+      <t t-snippet="theme_novaconsult_pro.s_nova_logos"
+         string="Client Logos (NovaConsult)"
+         group="novaconsult"
+         t-thumbnail="/theme_novaconsult_pro/static/src/img/wbuilder/s_services.svg">
+        <keywords>logos clients brands trust</keywords>
+      </t>
+
+      <!-- STATS / KPI -->
+      <t t-snippet="theme_novaconsult_pro.s_nova_stats"
+         string="Stats / KPI (NovaConsult)"
+         group="novaconsult"
+         t-thumbnail="/theme_novaconsult_pro/static/src/img/wbuilder/s_services.svg">
+        <keywords>stats kpi results metrics numbers</keywords>
+      </t>
+
+      <!-- FEATURES GRID -->
+      <t t-snippet="theme_novaconsult_pro.s_nova_features"
+         string="Features Grid (NovaConsult)"
+         group="novaconsult"
+         t-thumbnail="/theme_novaconsult_pro/static/src/img/wbuilder/s_services.svg">
+        <keywords>features benefits grid icons</keywords>
+      </t>
+
+      <!-- VALUE PROPS -->
+      <t t-snippet="theme_novaconsult_pro.s_nova_value_props"
+         string="Value Props (NovaConsult)"
+         group="novaconsult"
+         t-thumbnail="/theme_novaconsult_pro/static/src/img/wbuilder/s_services.svg">
+        <keywords>benefits features grid</keywords>
+      </t>
+
+      <!-- SERVICES -->
+      <t t-snippet="theme_novaconsult_pro.s_nova_services"
+         string="Services Grid (NovaConsult)"
+         group="novaconsult"
+         t-thumbnail="/theme_novaconsult_pro/static/src/img/wbuilder/s_services.svg">
+        <keywords>services features cards</keywords>
+      </t>
+
+      <!-- METHOD -->
+      <t t-snippet="theme_novaconsult_pro.s_nova_method"
+         string="4-Step Method (NovaConsult)"
+         group="novaconsult"
+         t-thumbnail="/theme_novaconsult_pro/static/src/img/wbuilder/s_services.svg">
+        <keywords>process steps workflow</keywords>
+      </t>
+
+      <!-- CASE STUDIES -->
+      <t t-snippet="theme_novaconsult_pro.s_nova_case_studies"
+         string="Case Studies (NovaConsult)"
+         group="novaconsult"
+         t-thumbnail="/theme_novaconsult_pro/static/src/img/wbuilder/s_services.svg">
+        <keywords>portfolio results proof</keywords>
+      </t>
+
+      <!-- TESTIMONIALS -->
+      <t t-snippet="theme_novaconsult_pro.s_nova_testimonials"
+         string="Testimonials (NovaConsult)"
+         group="novaconsult"
+         t-thumbnail="/theme_novaconsult_pro/static/src/img/wbuilder/s_services.svg">
+        <keywords>reviews clients social proof</keywords>
+      </t>
+
+      <!-- PRICING -->
+      <t t-snippet="theme_novaconsult_pro.s_nova_pricing"
+         string="Pricing (NovaConsult)"
+         group="novaconsult"
+         t-thumbnail="/theme_novaconsult_pro/static/src/img/wbuilder/s_pricing.svg">
+        <keywords>pricing plans packages</keywords>
+      </t>
+
+      <!-- FAQ -->
+      <t t-snippet="theme_novaconsult_pro.s_nova_faq"
+         string="FAQ (NovaConsult)"
+         group="novaconsult"
+         t-thumbnail="/theme_novaconsult_pro/static/src/img/wbuilder/s_services.svg">
+        <keywords>faq questions answers</keywords>
+      </t>
+
+      <!-- CONTACT CTA -->
+      <t t-snippet="theme_novaconsult_pro.s_nova_contact_cta"
+         string="Contact CTA (NovaConsult)"
+         group="novaconsult"
+         t-thumbnail="/theme_novaconsult_pro/static/src/img/wbuilder/s_contact.svg">
+        <keywords>cta contact lead</keywords>
+      </t>
+
+      <!-- FOOTER -->
+      <t t-snippet="theme_novaconsult_pro.s_nova_footer"
+         string="Footer (NovaConsult)"
+         group="novaconsult"
+         t-thumbnail="/theme_novaconsult_pro/static/src/img/wbuilder/s_services.svg">
+        <keywords>footer links legal</keywords>
+      </t>
+
+      <!-- =============================== -->
+      <!-- PAGES COMPLETES (blocs)         -->
+      <!-- =============================== -->
+
+      <t t-snippet="theme_novaconsult_pro.snip_consulting_home"
+         string="Page — Home (NovaConsult)"
+         group="novaconsult"
+         t-thumbnail="/theme_novaconsult_pro/static/src/img/wbuilder/s_hero.svg">
+        <keywords>page home landing full</keywords>
+      </t>
+
+      <t t-snippet="theme_novaconsult_pro.snip_consulting_services"
+         string="Page — Services (NovaConsult)"
+         group="novaconsult"
+         t-thumbnail="/theme_novaconsult_pro/static/src/img/wbuilder/s_services.svg">
+        <keywords>page services offers</keywords>
+      </t>
+
+      <t t-snippet="theme_novaconsult_pro.snip_consulting_pricing"
+         string="Page — Pricing (NovaConsult)"
+         group="novaconsult"
+         t-thumbnail="/theme_novaconsult_pro/static/src/img/wbuilder/s_pricing.svg">
+        <keywords>page pricing plans</keywords>
+      </t>
+
+      <t t-snippet="theme_novaconsult_pro.snip_consulting_cases"
+         string="Page — Case Studies (NovaConsult)"
+         group="novaconsult"
+         t-thumbnail="/theme_novaconsult_pro/static/src/img/wbuilder/s_services.svg">
+        <keywords>page cases portfolio results</keywords>
+      </t>
+
+      <t t-snippet="theme_novaconsult_pro.snip_consulting_method"
+         string="Page — Method (NovaConsult)"
+         group="novaconsult"
+         t-thumbnail="/theme_novaconsult_pro/static/src/img/wbuilder/s_services.svg">
+        <keywords>page method process steps</keywords>
+      </t>
+
+      <t t-snippet="theme_novaconsult_pro.snip_consulting_contact"
+         string="Page — Contact (NovaConsult)"
+         group="novaconsult"
+         t-thumbnail="/theme_novaconsult_pro/static/src/img/wbuilder/s_contact.svg">
+        <keywords>page contact form</keywords>
+      </t>
+
+    </xpath>
+  </template>
+</odoo>

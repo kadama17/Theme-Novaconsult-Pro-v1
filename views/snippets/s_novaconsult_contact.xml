@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+<template id="s_novaconsult_contact" name="NovaConsult — CTA Contact">
+  <section class="th-nova section cta o_we_snippet o_colored_level" data-snippet="s_novaconsult_contact" data-name="NovaConsult — CTA Contact">
+    <div class="sv-container">
+      <div class="ctaGrid">
+        <div>
+          <h2>Ready to ship?</h2>
+          <p class="p">Tell us your context and goals. We’ll reply with a clear next step.</p>
+
+          <div class="bullets oe_structure o_we_snippet_area" data-name="CTA — Bullets">
+            <span class="bullet"><b>✓</b> Fast response</span>
+            <span class="bullet"><b>✓</b> Clean architecture</span>
+            <span class="bullet"><b>✓</b> Premium UI</span>
+          </div>
+        </div>
+
+        <div class="formCard oe_structure o_we_snippet_area" data-name="CTA — Form">
+          <div class="row">
+            <label>Your email</label>
+            <input type="email" placeholder="name@company.com"/>
+          </div>
+          <div class="row">
+            <label>Message</label>
+            <textarea rows="4" placeholder="What do you want to build?"></textarea>
+          </div>
+          <button class="btn btn-primary w-full" type="button">Send</button>
+          <p class="hint">Tip: Replace this block with Odoo “Contact Form” snippet if needed.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</template>
+</odoo>

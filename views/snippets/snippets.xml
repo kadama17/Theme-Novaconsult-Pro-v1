@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+  <template id="nova_snippets" inherit_id="website.snippets" name="NovaConsult — Snippets">
+    <xpath expr="//div[@id='snippet_content']" position="inside">
+
+      <t t-snippet="theme_novaconsult_pro.s_nova_topbar"/>
+      <t t-snippet="theme_novaconsult_pro.s_nova_header"/>
+      <t t-snippet="theme_novaconsult_pro.s_nova_hero"/>
+      <t t-snippet="theme_novaconsult_pro.s_nova_value_props"/>
+      <t t-snippet="theme_novaconsult_pro.s_nova_services"/>
+      <t t-snippet="theme_novaconsult_pro.s_nova_method"/>
+      <t t-snippet="theme_novaconsult_pro.s_nova_case_studies"/>
+      <t t-snippet="theme_novaconsult_pro.s_nova_testimonials"/>
+      <t t-snippet="theme_novaconsult_pro.s_nova_pricing"/>
+      <t t-snippet="theme_novaconsult_pro.s_nova_faq"/>
+      <t t-snippet="theme_novaconsult_pro.s_nova_contact_cta"/>
+      <t t-snippet="theme_novaconsult_pro.s_nova_footer"/>
+
+    </xpath>
+  </template>
+</odoo>

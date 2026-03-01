@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+  <template id="s_nova_pricing" name="NovaConsult — Pricing">
+    <section class="th-nova section section--alt o_we_snippet o_colored_level"
+             data-snippet="s_text_block"
+             data-name="NovaConsult — Pricing"
+             id="pricing">
+      <div class="sv-container">
+        <div class="sectionHead o_we_snippet_area" data-name="Pricing — Head">
+          <h2>Simple plans</h2>
+          <p>Start small with a diagnostic, then move to monthly support to execute and measure.</p>
+        </div>
+
+        <div class="pricing o_we_snippet_area" data-name="Pricing — Plans">
+          <article class="plan">
+            <div class="plan__head">
+              <h3>Starter</h3>
+              <p>For quick clarity</p>
+            </div>
+            <div class="plan__price">
+              <span class="plan__amount">€490</span>
+              <span class="plan__period">/ diagnostic</span>
+            </div>
+            <ul class="list">
+              <li>Express audit (90 min)</li>
+              <li>Priorities &amp; quick wins</li>
+              <li>14-day plan</li>
+            </ul>
+            <a class="btn btn--soft w-full" href="#contact">Choose Starter</a>
+          </article>
+
+          <article class="plan plan--featured">
+            <div class="plan__ribbon">Most popular</div>
+            <div class="plan__head">
+              <h3>Growth</h3>
+              <p>Execute + measure</p>
+            </div>
+            <div class="plan__price">
+              <span class="plan__amount">€1,490</span>
+              <span class="plan__period">/ month</span>
+            </div>
+            <ul class="list">
+              <li>30/60/90 roadmap</li>
+              <li>2 workshops / week</li>
+              <li>KPI dashboard</li>
+              <li>Unlimited async support</li>
+            </ul>
+            <a class="btn btn--primary w-full" href="#contact">Choose Growth</a>
+          </article>
+
+          <article class="plan">
+            <div class="plan__head">
+              <h3>Scale</h3>
+              <p>Structure the organization</p>
+            </div>
+            <div class="plan__price">
+              <span class="plan__amount">€2,990</span>
+              <span class="plan__period">/ month</span>
+            </div>
+            <ul class="list">
+              <li>Complete processes &amp; SOPs</li>
+              <li>Automation &amp; tooling</li>
+              <li>Team training</li>
+              <li>Rituals + governance</li>
+            </ul>
+            <a class="btn btn--soft w-full" href="#contact">Choose Scale</a>
+          </article>
+        </div>
+
+        <div class="note o_we_snippet_area" data-name="Pricing — Note">
+          <strong>Note:</strong> Prices are indicative. We can adapt based on scope, timing, and team size.
+        </div>
+      </div>
+    </section>
+  </template>
+</odoo>

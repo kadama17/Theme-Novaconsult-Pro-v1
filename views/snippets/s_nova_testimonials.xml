@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+  <template id="s_nova_testimonials" name="NovaConsult — Testimonials">
+    <section class="th-nova section o_we_snippet o_colored_level"
+             data-snippet="s_text_block"
+             data-name="NovaConsult — Testimonials">
+      <div class="sv-container">
+        <div class="sectionHead o_we_snippet_area" data-name="Testimonials — Head">
+          <h2>What clients say</h2>
+          <p>Clear, structured, actionable. We work transparently and document everything.</p>
+        </div>
+
+        <div class="grid3 o_we_snippet_area" data-name="Testimonials — Quotes">
+          <figure class="quote">
+            <blockquote>“We finally have a realistic roadmap. The KPIs are simple and everyone knows what to do.”</blockquote>
+            <figcaption>
+              <span class="quote__name">Samira A.</span>
+              <span class="quote__role">CEO, B2B SaaS</span>
+            </figcaption>
+          </figure>
+
+          <figure class="quote">
+            <blockquote>“Results in 2 weeks. The quick wins paid for the engagement.”</blockquote>
+            <figcaption>
+              <span class="quote__name">Yassine M.</span>
+              <span class="quote__role">Head of Growth</span>
+            </figcaption>
+          </figure>
+
+          <figure class="quote">
+            <blockquote>“The process work transformed delivery. Less chaos — everything is standardized.”</blockquote>
+            <figcaption>
+              <span class="quote__name">Nadia K.</span>
+              <span class="quote__role">COO, SMB</span>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+  </template>
+</odoo>

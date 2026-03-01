@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+  <template id="novaconsult_layout_inherit" inherit_id="website.layout">
+    <!-- Ajoute la classe thème à tout le site -->
+    <xpath expr="//body" position="attributes">
+      <attribute name="class" add="th-nova o_consulting_dark"/>
+    </xpath>
+  </template>
+   <template id="nova_layout_header_switch" inherit_id="website.layout">
+    <!-- Replace existing header with your template -->
+    <xpath expr="//header" position="replace">
+      <t t-call="theme_novaconsult_pro.nova_header_v1"/>
+    </xpath>
+  </template>
+
+    <template id="nova_layout_footer_switch" inherit_id="website.layout">
+    <xpath expr="//footer" position="replace">
+      <t t-call="theme_novaconsult_pro.nova_footer_v1"/>
+    </xpath>
+  </template>
+</odoo>

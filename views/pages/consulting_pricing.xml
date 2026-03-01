@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+  <data>
+
+  <template id="page_consulting_pricing" name="Consulting — Pricing" page="True">
+
+
+<t name="NovaConsult — Pricing (EN)" t-name="website.consulting_pricing_novaconsult_en">
+  <t t-call="website.layout">
+    <div id="wrap" class="oe_structure th-nova o_consulting_pricing">
+
+      
+
+      <main class="o_we_snippet_area" data-name="Pricing Page">
+
+        <!-- HERO -->
+        <section class="o_we_snippet o_colored_level" data-snippet="s_text_block">
+          <div class="sv-container">
+            <div class="pageHero">
+              <div class="kicker">Pricing</div>
+              <h1>Simple offers.<br/>Clear deliverables.</h1>
+              <p class="lead">
+                Start with a diagnostic, then move to a monthly program to execute, measure, and improve.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- PRICING -->
+        <section class="section section--alt o_we_snippet o_colored_level" data-snippet="s_text_block" id="pricing">
+          <div class="sv-container">
+            <div class="sectionHead">
+              <h2>Choose the right starting point</h2>
+              <p>We can adapt scope, timelines, and cadence depending on team size and urgency.</p>
+            </div>
+
+            <div class="pricing oe_structure o_we_snippet_area" data-name="Plans">
+
+              <article class="plan o_we_snippet o_colored_level" data-snippet="s_text_block" data-name="Plan - Starter">
+                <h3>Starter</h3>
+                <p>Fast clarity</p>
+                <div class="priceRow">
+                  <span class="amount">€490</span><span class="period">/ diagnostic</span>
+                </div>
+                <ul class="list">
+                  <li>90-min audit call</li>
+                  <li>Top priorities &amp; quick wins</li>
+                  <li>14-day action plan</li>
+                </ul>
+                <div style="margin-top:12px;">
+                  <a class="sv-btn sv-btn-ghost w-full" href="#contact">Choose Starter</a>
+                </div>
+              </article>
+
+              <article class="plan plan--featured o_we_snippet o_colored_level" data-snippet="s_text_block" data-name="Plan - Growth">
+                <span class="ribbon">Most popular</span>
+                <h3>Growth</h3>
+                <p>Execute + measure</p>
+                <div class="priceRow">
+                  <span class="amount">€1,490</span><span class="period">/ month</span>
+                </div>
+                <ul class="list">
+                  <li>30/60/90 roadmap</li>
+                  <li>2 workshops / week</li>
+                  <li>KPI dashboard</li>
+                  <li>Unlimited async support</li>
+                </ul>
+                <div style="margin-top:12px;">
+                  <a class="sv-btn sv-btn-primary w-full" href="#contact">Choose Growth</a>
+                </div>
+              </article>
+
+              <article class="plan o_we_snippet o_colored_level" data-snippet="s_text_block" data-name="Plan - Scale">
+                <h3>Scale</h3>
+                <p>Structure the organization</p>
+                <div class="priceRow">
+                  <span class="amount">€2,990</span><span class="period">/ month</span>
+                </div>
+                <ul class="list">
+                  <li>Processes &amp; SOPs</li>
+                  <li>Automation &amp; tooling</li>
+                  <li>Team training</li>
+                  <li>Governance rituals</li>
+                </ul>
+                <div style="margin-top:12px;">
+                  <a class="sv-btn sv-btn-ghost w-full" href="#contact">Choose Scale</a>
+                </div>
+              </article>
+
+            </div>
+
+            <!-- WHAT'S INCLUDED -->
+            <div class="compare">
+              <div class="compareGrid oe_structure o_we_snippet_area" data-name="Included - Grid">
+                <div class="compareItem o_we_snippet o_colored_level" data-snippet="s_text_block" data-name="Included - 1">
+                  <strong>Roadmap</strong>
+                  <span>Clear priorities and sequence.</span>
+                </div>
+                <div class="compareItem o_we_snippet o_colored_level" data-snippet="s_text_block" data-name="Included - 2">
+                  <strong>Quick wins</strong>
+                  <span>Immediate actions within 10–14 days.</span>
+                </div>
+                <div class="compareItem o_we_snippet o_colored_level" data-snippet="s_text_block" data-name="Included - 3">
+                  <strong>Documentation</strong>
+                  <span>SOPs, templates, ownership.</span>
+                </div>
+                <div class="compareItem o_we_snippet o_colored_level" data-snippet="s_text_block" data-name="Included - 4">
+                  <strong>KPI rituals</strong>
+                  <span>Weekly reviews to improve fast.</span>
+                </div>
+              </div>
+
+              <div class="ctaBox" id="contact">
+                <div>
+                  <strong>Not sure which plan fits?</strong>
+                  <span>Answer 3 questions and we’ll recommend the best starting point.</span>
+                </div>
+                <a class="sv-btn sv-btn-primary" href="mailto:contact@novaconsult.com">Email us</a>
+              </div>
+            </div>
+
+          </div>
+        </section>
+
+      </main>
+    </div>
+  </t>
+</t>
+
+    </template>
+      </data>
+
+</odoo>

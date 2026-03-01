@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+   <data>
+ <template id="page_consulting_services" name="Consulting — Services" page="True">
+
+<t name="NovaConsult — Services (EN)" t-name="website.consulting_services_novaconsult_en">
+  <t t-call="website.layout">
+    <div id="wrap" class="oe_structure th-nova o_consulting_services">
+
+      
+
+      <main class="o_we_snippet_area" data-name="Services Page">
+
+        <!-- HERO -->
+        <section class="o_we_snippet o_colored_level" data-snippet="s_text_block" data-name="Services - Hero">
+          <div class="sv-container">
+            <div class="pageHero">
+              <div class="oe_structure o_we_snippet_area" data-name="Hero - Content">
+                <section class="o_we_snippet o_colored_level" data-snippet="s_text_block" data-name="Hero - Kicker">
+                  <div class="kicker"><b>Services</b><span>Choose a focus area — or go end-to-end.</span></div>
+                </section>
+
+                <section class="o_we_snippet o_colored_level" data-snippet="s_text_block" data-name="Hero - Title">
+                  <h1>Consulting services that drive <span class="grad">execution</span>.</h1>
+                </section>
+
+                <section class="o_we_snippet o_colored_level" data-snippet="s_text_block" data-name="Hero - Lead">
+                  <p class="lead">
+                    From strategy to operations, growth and data: we help you prioritize, deliver quick wins,
+                    and build a repeatable system with clear KPIs.
+                  </p>
+                </section>
+
+                <section class="o_we_snippet o_colored_level" data-snippet="s_text_block" data-name="Hero - Row">
+                  <div class="heroRow">
+                    <div class="heroActions">
+                      <a href="#contact" class="sv-btn sv-btn-primary">Request a diagnostic</a>
+                      <a href="#packages" class="sv-btn sv-btn-ghost">View packages</a>
+                    </div>
+
+                    <div class="heroMeta">
+                      <div class="chip"><span/>Delivered in 7–14 days</div>
+                      <div class="chip"><span/>Weekly KPI rituals</div>
+                      <div class="chip"><span/>Documentation included</div>
+                    </div>
+                  </div>
+                </section>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- SERVICES GRID -->
+        <section class="section section--alt o_we_snippet o_colored_level" data-snippet="s_text_block" data-name="Services - Grid" id="services">
+          <div class="sv-container">
+            <div class="sectionHead">
+              <div class="oe_structure">
+                <h2>Core services</h2>
+                <p>Each service can be delivered as a standalone engagement or combined into a full program.</p>
+              </div>
+              <div class="oe_structure">
+                <a class="sv-btn sv-btn-ghost" href="#contact">Get a recommendation</a>
+              </div>
+            </div>
+
+            <div class="grid2 oe_structure o_we_snippet_area" data-name="Service Cards">
+              <!-- 1 -->
+              <article class="serviceCard o_we_snippet o_colored_level" data-snippet="s_text_block" data-name="Service - Strategy">
+                <div class="serviceTop">
+                  <div class="serviceIcon">🧠</div>
+                  <h3>Strategy &amp; positioning</h3>
+                </div>
+                <p>Offer, pricing, messaging, segmentation and go-to-market. Clarify to sell better.</p>
+                <ul class="list">
+                  <li>Market &amp; competitor audit</li>
+                  <li>Offer design &amp; packaging</li>
+                  <li>Channel strategy &amp; acquisition plan</li>
+                </ul>
+                <div class="serviceFooter">
+                  <span class="tag">Best for: clarity</span>
+                  <a class="sv-btn sv-btn-ghost" href="#contact">Talk about this</a>
+                </div>
+              </article>
+
+              <!-- 2 -->
+              <article class="serviceCard o_we_snippet o_colored_level" data-snippet="s_text_block" data-name="Service - Ops">
+                <div class="serviceTop">
+                  <div class="serviceIcon">⚙️</div>
+                  <h3>Processes &amp; operational excellence</h3>
+                </div>
+                <p>Reduce friction, map workflows, build SOPs, automate and stabilize delivery.</p>
+                <ul class="list">
+                  <li>Process mapping &amp; bottlenecks</li>
+                  <li>Standardization (SOPs, templates)</li>
+                  <li>Automation (no-code / ERP)</li>
+                </ul>
+                <div class="serviceFooter">
+                  <span class="tag">Best for: delivery</span>
+                  <a class="sv-btn sv-btn-ghost" href="#contact">Talk about this</a>
+                </div>
+              </article>
+
+              <!-- 3 -->
+              <article class="serviceCard o_we_snippet o_colored_level" data-snippet="s_text_block" data-name="Service - Growth">
+                <div class="serviceTop">
+                  <div class="serviceIcon">📈</div>
+                  <h3>Growth &amp; conversion</h3>
+                </div>
+                <p>Improve funnel performance: landing, CRO, analytics, CRM, nurturing and sales ops.</p>
+                <ul class="list">
+                  <li>Conversion audit &amp; tracking</li>
+                  <li>Landing / checkout optimization</li>
+                  <li>CRM playbooks + scripts</li>
+                </ul>
+                <div class="serviceFooter">
+                  <span class="tag">Best for: revenue</span>
+                  <a class="sv-btn sv-btn-ghost" href="#contact">Talk about this</a>
+                </div>
+              </article>
+
+              <!-- 4 -->
+              <article class="serviceCard o_we_snippet o_colored_level" data-snippet="s_text_block" data-name="Service - Data">
+                <div class="serviceTop">
+                  <div class="serviceIcon">🗂️</div>
+                  <h3>Data &amp; performance management</h3>
+                </div>
+                <p>Define KPIs, consolidate sources and build dashboards that teams actually use.</p>
+                <ul class="list">
+                  <li>North Star Metric + KPI tree</li>
+                  <li>Executive dashboard</li>
+                  <li>Weekly / monthly rituals</li>
+                </ul>
+                <div class="serviceFooter">
+                  <span class="tag">Best for: control</span>
+                  <a class="sv-btn sv-btn-ghost" href="#contact">Talk about this</a>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <!-- DELIVERABLES -->
+        <section class="section o_we_snippet o_colored_level" data-snippet="s_text_block" data-name="Services - Deliverables" id="deliverables">
+          <div class="sv-container">
+            <div class="sectionHead">
+              <div class="oe_structure">
+                <h2>What you get</h2>
+                <p>Concrete deliverables you can hand to your team: roadmap, documentation, KPI dashboard, and a clear execution plan.</p>
+              </div>
+            </div>
+
+            <div class="grid2 oe_structure o_we_snippet_area" data-name="Deliverable Cards">
+              <article class="serviceCard o_we_snippet o_colored_level" data-snippet="s_text_block" data-name="Deliverable - Roadmap">
+                <div class="serviceTop">
+                  <div class="serviceIcon">🧭</div>
+                  <h3>30/60/90 roadmap</h3>
+                </div>
+                <p>Priorities, impact estimates, owners, dependencies and a realistic timeline.</p>
+                <ul class="list">
+                  <li>Quick wins (10–14 days)</li>
+                  <li>Milestones &amp; risks</li>
+                  <li>Budget &amp; resourcing guidance</li>
+                </ul>
+              </article>
+
+              <article class="serviceCard o_we_snippet o_colored_level" data-snippet="s_text_block" data-name="Deliverable - KPI">
+                <div class="serviceTop">
+                  <div class="serviceIcon">📊</div>
+                  <h3>KPI dashboard</h3>
+                </div>
+                <p>A dashboard that reflects reality: few metrics, strong definitions, weekly routines.</p>
+                <ul class="list">
+                  <li>Definitions + owners</li>
+                  <li>Targets &amp; leading indicators</li>
+                  <li>Review ritual template</li>
+                </ul>
+              </article>
+            </div>
+
+            <div style="margin-top:16px;">
+              <div class="ctaBox">
+                <div class="oe_structure">
+                  <strong>Not sure where to start?</strong>
+                  <span>Answer 3 questions and we’ll recommend the best first engagement.</span>
+                </div>
+                <div class="oe_structure">
+                  <a class="sv-btn sv-btn-primary" href="#contact">Get my recommendation</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- PACKAGES -->
+        <section class="section section--alt o_we_snippet o_colored_level" data-snippet="s_text_block" data-name="Services - Packages" id="packages">
+          <div class="sv-container">
+            <div class="sectionHead">
+              <div class="oe_structure">
+                <h2>Packages</h2>
+                <p>Start with a diagnostic, then move to monthly support to execute and measure.</p>
+              </div>
+            </div>
+
+            <div class="pricing oe_structure o_we_snippet_area" data-name="Plans">
+              <article class="plan o_we_snippet o_colored_level" data-snippet="s_text_block" data-name="Plan - Starter">
+                <h3>Starter</h3>
+                <p>Fast clarity</p>
+                <div class="priceRow">
+                  <span class="amount">€490</span><span class="period">/ diagnostic</span>
+                </div>
+                <ul class="list">
+                  <li>90-min audit call</li>
+                  <li>Priorities &amp; quick wins</li>
+                  <li>14-day action plan</li>
+                </ul>
+                <div style="margin-top:12px;">
+                  <a class="sv-btn sv-btn-ghost w-full" href="#contact">Choose Starter</a>
+                </div>
+              </article>
+
+              <article class="plan plan--featured o_we_snippet o_colored_level" data-snippet="s_text_block" data-name="Plan - Growth">
+                <span class="ribbon">Most popular</span>
+                <h3>Growth</h3>
+                <p>Execute + measure</p>
+                <div class="priceRow">
+                  <span class="amount">€1,490</span><span class="period">/ month</span>
+                </div>
+                <ul class="list">
+                  <li>30/60/90 roadmap</li>
+                  <li>2 workshops / week</li>
+                  <li>KPI dashboard</li>
+                  <li>Unlimited async support</li>
+                </ul>
+                <div style="margin-top:12px;">
+                  <a class="sv-btn sv-btn-primary w-full" href="#contact">Choose Growth</a>
+                </div>
+              </article>
+
+              <article class="plan o_we_snippet o_colored_level" data-snippet="s_text_block" data-name="Plan - Scale">
+                <h3>Scale</h3>
+                <p>Structure the organization</p>
+                <div class="priceRow">
+                  <span class="amount">€2,990</span><span class="period">/ month</span>
+                </div>
+                <ul class="list">
+                  <li>Processes &amp; SOPs</li>
+                  <li>Automation &amp; tooling</li>
+                  <li>Team training</li>
+                  <li>Governance rituals</li>
+                </ul>
+                <div style="margin-top:12px;">
+                  <a class="sv-btn sv-btn-ghost w-full" href="#contact">Choose Scale</a>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <!-- CONTACT CTA (simple) -->
+        <section class="section o_we_snippet o_colored_level" data-snippet="s_text_block" data-name="Services - Contact CTA" id="contact">
+          <div class="sv-container">
+            <div class="ctaBox">
+              <div class="oe_structure">
+                <strong>Let’s diagnose your situation.</strong>
+                <span>Tell us your goal and we’ll propose a concrete plan (reply within 24–48 business hours).</span>
+              </div>
+              <div class="oe_structure">
+                <a class="sv-btn sv-btn-primary" href="mailto:contact@novaconsult.com">Email us</a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+      </main>
+    </div>
+  </t>
+</t>
+
+    </template>
+      </data>
+
+</odoo>

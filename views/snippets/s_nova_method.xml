@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+  <template id="s_nova_method" name="NovaConsult — Method">
+    <section class="th-nova section o_we_snippet o_colored_level"
+             data-snippet="s_text_block"
+             data-name="NovaConsult — Method"
+             id="method">
+      <div class="sv-container">
+        <div class="sectionHead o_we_snippet_area" data-name="Method — Head">
+          <h2>Our 4-step method</h2>
+          <p>A simple framework that avoids vague engagements: diagnose → plan → execute → optimize.</p>
+        </div>
+
+        <div class="steps o_we_snippet_area" data-name="Method — Steps">
+          <div class="step">
+            <div class="step__num">1</div>
+            <div>
+              <h3>Diagnosis</h3>
+              <p>Interviews + data analysis + process audit. We identify levers and blockers.</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step__num">2</div>
+            <div>
+              <h3>Action plan</h3>
+              <p>30/60/90 roadmap, prioritization, impact estimates, owners, dependencies.</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step__num">3</div>
+            <div>
+              <h3>Execution</h3>
+              <p>We deliver with your team: workshops, documentation, implementation, tests, quick wins.</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step__num">4</div>
+            <div>
+              <h3>Optimization</h3>
+              <p>KPI tracking + continuous improvement loop. We stabilize and prepare the next phase.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </template>
+</odoo>

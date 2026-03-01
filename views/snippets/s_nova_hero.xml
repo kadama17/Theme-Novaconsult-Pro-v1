@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+  <template id="s_nova_hero" name="NovaConsult — Hero">
+    <section class="th-nova hero o_we_snippet o_colored_level"
+             data-snippet="s_text_block"
+             data-name="NovaConsult — Hero">
+      <div class="sv-container hero__grid">
+        <div class="hero__content o_we_snippet_area" data-name="Hero — Content">
+
+          <div class="pill">
+            <span class="pill__badge">New</span>
+            <span>Audit + roadmap delivered in 7 days</span>
+          </div>
+
+          <h1 class="hero__title">
+            Accelerate growth with a consulting agency that is
+            <span class="grad">strategic + hands-on</span>.
+          </h1>
+
+          <p class="hero__lead">
+            Strategy, processes, data, digital transformation: we structure execution, clarify priorities,
+            and install actionable KPIs so you can scale sustainably.
+          </p>
+
+          <div class="hero__actions">
+            <a class="btn btn--primary btn--lg" href="#contact">Request a diagnostic</a>
+            <a class="btn btn--soft btn--lg" href="#case">See outcomes</a>
+          </div>
+
+          <div class="hero__proof">
+            <div class="metric">
+              <div class="metric__value">+38%</div>
+              <div class="metric__label">average growth</div>
+            </div>
+            <div class="metric">
+              <div class="metric__value">-22%</div>
+              <div class="metric__label">operational costs</div>
+            </div>
+            <div class="metric">
+              <div class="metric__value">4.9/5</div>
+              <div class="metric__label">client satisfaction</div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="hero__visual o_we_snippet_area" data-name="Hero — Visual">
+          <div class="glassCard">
+            <div class="glassCard__top">
+              <div class="avatarRow">
+                <div class="avatar"></div><div class="avatar"></div><div class="avatar"></div>
+                <span class="avatarRow__txt">120+ clients supported</span>
+              </div>
+              <div class="miniKpi">
+                <span class="miniKpi__label">Pipeline</span>
+                <span class="miniKpi__value">€ 1.24M</span>
+              </div>
+            </div>
+
+            <div class="chartMock">
+              <div class="chartMock__bar" style="--h: 42%"></div>
+              <div class="chartMock__bar" style="--h: 70%"></div>
+              <div class="chartMock__bar" style="--h: 58%"></div>
+              <div class="chartMock__bar" style="--h: 86%"></div>
+              <div class="chartMock__bar" style="--h: 63%"></div>
+              <div class="chartMock__bar" style="--h: 92%"></div>
+            </div>
+
+            <div class="glassCard__bottom">
+              <div class="badge"><span class="badge__dot"></span> Weekly ROI tracking</div>
+              <div class="badge"><span class="badge__dot"></span> 90-day roadmap</div>
+              <div class="badge"><span class="badge__dot"></span> Quick wins within 14 days</div>
+            </div>
+          </div>
+
+          <div class="floatingCard floatingCard--a">
+            <div class="floatingCard__title">Execution score</div>
+            <div class="floatingCard__big">8.6/10</div>
+            <div class="floatingCard__sub">+1.4 this month</div>
+          </div>
+
+          <div class="floatingCard floatingCard--b">
+            <div class="floatingCard__title">Time saved</div>
+            <div class="floatingCard__big">+11h</div>
+            <div class="floatingCard__sub">per week</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="sv-container logos">
+        <p class="logos__label o_we_snippet_area" data-name="Hero — Logos Label">Trusted by teams</p>
+        <div class="logos__row o_we_snippet_area" data-name="Hero — Logos">
+          <div class="logoBox">Atlas</div>
+          <div class="logoBox">Cobalt</div>
+          <div class="logoBox">Helios</div>
+          <div class="logoBox">North</div>
+          <div class="logoBox">Vertex</div>
+        </div>
+      </div>
+    </section>
+  </template>
+</odoo>
