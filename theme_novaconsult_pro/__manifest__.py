@@ -62,7 +62,7 @@
 
     'images': [
     'static/description/theme_novaconsult_pro_cover.png',
-    'static/description/screenshot.png',
+    'static/description/screenshot.webp',
 ],
 
     "assets": {
