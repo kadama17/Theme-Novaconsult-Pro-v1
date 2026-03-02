@@ -61,7 +61,7 @@
     ],
 
     'images': [
-    'static/description/theme_novaconsult_pro_cover.png',
+    'static/description/theme_novaconsult_pro_cover.webp',
     'static/description/screenshot.webp',
 ],
 
