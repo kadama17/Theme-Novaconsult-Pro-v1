@@ -2923,3 +2923,40 @@ header.th-nova{
   width: auto;
   object-fit: contain;
 }
+
+/* Nova Header V1 — Fix hover menu (scopé) */
+.th-nova.nova-header-v1 .navbar .nav-link{
+  color: rgba(233,238,252,.78);
+  border-radius: 12px;
+  transition: background .15s ease, color .15s ease, box-shadow .15s ease;
+}
+
+/* hover/focus : pas de noir */
+.th-nova.nova-header-v1 .navbar .nav-link:hover,
+.th-nova.nova-header-v1 .navbar .nav-link:focus{
+  background: rgba(255,255,255,.08) !important; /* ✅ remplace le noir */
+  color: var(--ink) !important;
+  box-shadow: 0 0 0 1px rgba(233,238,252,.10) inset;
+}
+
+/* état actif (page courante) */
+.th-nova.nova-header-v1 .navbar .nav-item.active > .nav-link,
+.th-nova.nova-header-v1 .navbar .nav-link.active{
+  background: rgba(243,255,26,.12);
+  border: 1px solid rgba(243,255,26,.22);
+  color: var(--ink) !important;
+}
+
+/* dropdown si tu en as (évite aussi le hover noir dans le menu déroulant) */
+.th-nova.nova-header-v1 .dropdown-menu{
+  background: rgba(11,16,32,.96);
+  border: 1px solid rgba(233,238,252,.12);
+}
+.th-nova.nova-header-v1 .dropdown-item{
+  color: rgba(233,238,252,.78);
+}
+.th-nova.nova-header-v1 .dropdown-item:hover,
+.th-nova.nova-header-v1 .dropdown-item:focus{
+  background: rgba(255,255,255,.08) !important;
+  color: var(--ink) !important;
+}

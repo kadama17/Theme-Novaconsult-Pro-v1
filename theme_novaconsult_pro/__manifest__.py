@@ -60,6 +60,11 @@
 "views/footer_templates.xml",
     ],
 
+    'images': [
+    'static/description/theme_novaconsult_pro_cover.png',
+    'static/description/screenshot.png',
+],
+
     "assets": {
 
         # ----------------------------------------------------
