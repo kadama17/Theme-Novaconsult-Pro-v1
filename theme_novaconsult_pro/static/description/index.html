@@ -6,317 +6,333 @@
   <title>NovaConsult Pro — Odoo Theme</title>
 </head>
 
-<body style="margin:0;padding:0;background:#ffffff;color:#0f172a;font-family:Arial,Helvetica,sans-serif;line-height:1.6;">
+<body style="margin:0;padding:0;background:#ffffff;color:#000000;font-family:Arial,Helvetica,sans-serif;line-height:1.6;">
   <div style="max-width:1040px;margin:0 auto;padding:26px 16px 44px;">
 
-    <!-- ===================== HERO ===================== -->
-<!-- ===================== HERO (WHITE) ===================== -->
-<div style="border-radius:22px;overflow:hidden;border:1px solid #e9edf6;background:#ffffff;color:#0f172a;padding:22px 20px 18px;position:relative;">
+    <!-- ====== BASE TEXT SYSTEM (INLINE) ====== -->
+    <div style="
+      --text:#000000;
+      --muted:#000000;
+      --title:#000000;
+      --border:#e9edf6;
+      --bg:#ffffff;
+      --soft:#fbfbfe;
+      --shadow:0 6px 18px rgba(10,20,40,.06);
+      --p:21px;
+      --small:21px; /* demandé: 21px partout */
+      --h2:30px;
+      --h1:40px;
+    ">
 
-  <div style="display:inline-block;background:#f8fafc;border:1px solid #e9edf6;padding:6px 10px;border-radius:999px;font-size:12px;margin-bottom:12px;color:#0f172a;">
-    Premium Theme • <b style="color:#16a34a;">Website Builder Ready</b> • Responsive
-  </div>
+      <!-- ===================== HERO (WHITE) ===================== -->
+      <div style="border-radius:22px;overflow:hidden;border:1px solid var(--border);background:var(--bg);color:var(--text);padding:22px 20px 18px;position:relative;">
 
-  <table role="presentation" cellpadding="0" cellspacing="0" style="width:100%;border-collapse:collapse;">
-    <tr>
-      <td style="width:62px;vertical-align:top;">
-        <div style="width:54px;height:54px;border-radius:16px;overflow:hidden;background:#f8fafc;border:1px solid #e9edf6;">
-          <img src="icon.png" alt="NovaConsult Pro Icon" style="width:54px;height:54px;display:block;">
+        <div style="display:inline-block;background:#f8fafc;border:1px solid var(--border);padding:8px 12px;border-radius:999px;font-size:var(--small);margin-bottom:14px;color:var(--text);">
+          Premium Theme • <b style="color:#16a34a;">Website Builder Ready</b> • Responsive
         </div>
-      </td>
 
-      <td style="vertical-align:top;padding-left:12px;">
-        <h1 style="margin:0 0 10px;font-size:30px;line-height:1.12;letter-spacing:-0.4px;color:#0f172a;">
-          NovaConsult Pro — Premium Consulting &amp; Agency Theme
-        </h1>
+        <table role="presentation" cellpadding="0" cellspacing="0" style="width:100%;border-collapse:collapse;">
+          <tr>
+            <td style="width:62px;vertical-align:top;">
+              <div style="width:54px;height:54px;border-radius:16px;overflow:hidden;background:#f8fafc;border:1px solid var(--border);">
+                <img src="icon.png" alt="NovaConsult Pro Icon" style="width:54px;height:54px;display:block;">
+              </div>
+            </td>
 
-        <p style="margin:0 0 10px;color:#334155;font-size:15px;">
-          <b style="color:#0f172a;">More than a dark skin.</b> A complete layout system: spacing, hierarchy, components, and conversion blocks — designed to stay consistent when you add snippets.
-        </p>
+            <td style="vertical-align:top;padding-left:12px;">
+              <h1 style="margin:0 0 12px;font-size:var(--h1);line-height:1.12;letter-spacing:-0.4px;color:var(--title);">
+                NovaConsult Pro — Premium Consulting &amp; Agency Theme
+              </h1>
 
-        <p style="margin:0;color:#64748b;font-size:14px;">
-          Built for agencies, consultants, SaaS and premium services. Clean scoped CSS, no core edits, builder-safe structure.
-        </p>
-      </td>
-    </tr>
-  </table>
+              <p style="margin:0 0 12px;color:var(--text);font-size:var(--p);">
+                <b style="color:var(--title);">More than a dark skin.</b> A complete layout system: spacing, hierarchy, components, and conversion blocks — designed to stay consistent when you add snippets.
+              </p>
 
-  <div style="height:14px;"></div>
+              <p style="margin:0;color:var(--text);font-size:var(--p);">
+                Built for agencies, consultants, SaaS and premium services. Clean scoped CSS, no core edits, builder-safe structure.
+              </p>
+            </td>
+          </tr>
+        </table>
 
-  <!-- CTA row -->
-  <table role="presentation" cellpadding="0" cellspacing="0" style="width:100%;border-collapse:separate;border-spacing:10px;">
-    <tr>
-      <td style="width:50%;vertical-align:top;">
-        <div style="background:#ffffff;border:1px solid #e9edf6;border-radius:16px;padding:12px;box-shadow:0 6px 18px rgba(10,20,40,.06);">
-          <div style="font-size:13px;color:#0f172a;margin-bottom:8px;"><b>Highlights</b></div>
-          <ul style="margin:0;padding-left:18px;color:#334155;font-size:13px;">
-            <li style="margin:6px 0;">Cohesive sections (no visual “breaks” between blocks)</li>
-            <li style="margin:6px 0;">Scoped CSS architecture (conflict-free)</li>
-            <li style="margin:6px 0;">Conversion-focused: proof, KPIs, plans, CTA, form</li>
-            <li style="margin:6px 0;">Mobile-first refinements &amp; spacing system</li>
-          </ul>
-        </div>
-      </td>
+        <div style="height:16px;"></div>
 
-      <td style="width:50%;vertical-align:top;">
-        <div style="background:#ffffff;border:1px solid #e9edf6;border-radius:16px;overflow:hidden;box-shadow:0 6px 18px rgba(10,20,40,.06);">
-          <img src="cover.webp" alt="NovaConsult Pro cover" style="width:100%;height:auto;display:block;">
-        </div>
-      </td>
-    </tr>
-  </table>
-
-  <!-- Stats row -->
-  <div style="height:10px;"></div>
-  <table role="presentation" cellpadding="0" cellspacing="0" style="width:100%;border-collapse:separate;border-spacing:10px;">
-    <tr>
-      <td style="background:#ffffff;border:1px solid #e9edf6;border-radius:14px;padding:10px;box-shadow:0 6px 18px rgba(10,20,40,.06);">
-        <div style="font-size:18px;line-height:1;color:#0f172a;"><b>24+</b></div>
-        <div style="font-size:12px;color:#64748b;">Snippets included</div>
-      </td>
-
-      <td style="background:#ffffff;border:1px solid #e9edf6;border-radius:14px;padding:10px;box-shadow:0 6px 18px rgba(10,20,40,.06);">
-        <div style="font-size:18px;line-height:1;color:#0f172a;"><b>6</b></div>
-        <div style="font-size:12px;color:#64748b;">Demo pages</div>
-      </td>
-
-      <td style="background:#ffffff;border:1px solid #e9edf6;border-radius:14px;padding:10px;box-shadow:0 6px 18px rgba(10,20,40,.06);">
-        <div style="font-size:18px;line-height:1;color:#0f172a;"><b>100%</b></div>
-        <div style="font-size:12px;color:#64748b;">Builder compatible</div>
-      </td>
-
-      <td style="background:#ffffff;border:1px solid #e9edf6;border-radius:14px;padding:10px;box-shadow:0 6px 18px rgba(10,20,40,.06);">
-        <div style="font-size:18px;line-height:1;color:#0f172a;"><b>17–18</b></div>
-        <div style="font-size:12px;color:#64748b;">Odoo versions</div>
-      </td>
-    </tr>
-  </table>
-
-</div>
-
-    <!-- ===================== SECTION: VALUE ===================== -->
-    <div style="margin-top:22px;">
-      <h2 style="margin:0 0 10px;font-size:22px;letter-spacing:-0.2px;">Results-driven structure (not just visuals)</h2>
-      <div style="color:#64748b;font-size:14px;margin-bottom:12px;">
-        NovaConsult Pro is designed like a landing system: hierarchy, spacing, proof blocks and CTAs that scale across pages.
-      </div>
-
-      <table role="presentation" cellpadding="0" cellspacing="0" style="width:100%;border-collapse:separate;border-spacing:12px;">
-        <tr>
-          <td style="width:33.33%;background:#ffffff;border:1px solid #e9edf6;border-radius:16px;padding:14px;box-shadow:0 6px 18px rgba(10,20,40,.06);">
-            <div style="font-size:13px;color:#0f172a;margin-bottom:6px;"><b>Quick wins</b></div>
-            <div style="color:#64748b;font-size:13px;">Built-in “audit” blocks and outcome cards to clarify the first steps.</div>
-          </td>
-          <td style="width:33.33%;background:#ffffff;border:1px solid #e9edf6;border-radius:16px;padding:14px;box-shadow:0 6px 18px rgba(10,20,40,.06);">
-            <div style="font-size:13px;color:#0f172a;margin-bottom:6px;"><b>Clear roadmap</b></div>
-            <div style="color:#64748b;font-size:13px;">Pricing + plans sections already structured for scope &amp; deliverables.</div>
-          </td>
-          <td style="width:33.33%;background:#ffffff;border:1px solid #e9edf6;border-radius:16px;padding:14px;box-shadow:0 6px 18px rgba(10,20,40,.06);">
-            <div style="font-size:13px;color:#0f172a;margin-bottom:6px;"><b>KPIs &amp; credibility</b></div>
-            <div style="color:#64748b;font-size:13px;">Social proof, case studies, metrics — to boost trust and conversion.</div>
-          </td>
-        </tr>
-      </table>
-    </div>
-
-    <!-- ===================== SECTION: SIDE-BY-SIDE ===================== -->
-    <div style="margin-top:22px;">
-      <h2 style="margin:0 0 8px;font-size:22px;letter-spacing:-0.2px;">Side-by-side comparison</h2>
-      <div style="color:#64748b;font-size:14px;margin-bottom:12px;">
-        Show your customers what changes: spacing, hierarchy, components and consistency (replace images with your own).
-      </div>
-
-      <div style="background:#fbfbfe;border:1px solid #e9edf6;border-radius:18px;padding:14px;box-shadow:0 6px 18px rgba(10,20,40,.06);">
+        <!-- CTA row -->
         <table role="presentation" cellpadding="0" cellspacing="0" style="width:100%;border-collapse:separate;border-spacing:12px;">
           <tr>
             <td style="width:50%;vertical-align:top;">
-              <div style="font-size:12px;color:#64748b;margin:0 0 8px;"><b>Standard website</b></div>
-              <div style="border-radius:14px;overflow:hidden;border:1px solid #e9edf6;background:#ffffff;">
-                <img src="compare_standard.webp" alt="Standard website preview" style="width:100%;height:auto;display:block;">
+              <div style="background:var(--bg);border:1px solid var(--border);border-radius:16px;padding:14px;box-shadow:var(--shadow);">
+                <div style="font-size:var(--p);color:var(--title);margin-bottom:10px;"><b>Highlights</b></div>
+                <ul style="margin:0;padding-left:22px;color:var(--text);font-size:var(--p);">
+                  <li style="margin:10px 0;">Cohesive sections (no visual “breaks” between blocks)</li>
+                  <li style="margin:10px 0;">Scoped CSS architecture (conflict-free)</li>
+                  <li style="margin:10px 0;">Conversion-focused: proof, KPIs, plans, CTA, form</li>
+                  <li style="margin:10px 0;">Mobile-first refinements &amp; spacing system</li>
+                </ul>
               </div>
             </td>
+
             <td style="width:50%;vertical-align:top;">
-              <div style="font-size:12px;color:#64748b;margin:0 0 8px;"><b>NovaConsult Pro</b></div>
-              <div style="border-radius:14px;overflow:hidden;border:1px solid #e9edf6;background:#ffffff;">
-                <img src="compare_nova.webp" alt="NovaConsult Pro preview" style="width:100%;height:auto;display:block;">
+              <div style="background:var(--bg);border:1px solid var(--border);border-radius:16px;overflow:hidden;box-shadow:var(--shadow);">
+                <img src="cover.webp" alt="NovaConsult Pro cover" style="width:100%;height:auto;display:block;">
               </div>
             </td>
           </tr>
         </table>
 
-        <div style="height:10px;"></div>
-        <table role="presentation" cellpadding="0" cellspacing="0" style="width:100%;border-collapse:separate;border-spacing:10px;">
+        <!-- Stats row -->
+        <div style="height:12px;"></div>
+        <table role="presentation" cellpadding="0" cellspacing="0" style="width:100%;border-collapse:separate;border-spacing:12px;">
           <tr>
-            <td style="width:33.33%;background:#ffffff;border:1px solid #e9edf6;border-radius:14px;padding:12px;">
-              <div style="font-size:13px;"><b>Hierarchy</b></div>
-              <div style="color:#64748b;font-size:13px;">Clear headings, lead text, spacing rhythm.</div>
+            <td style="background:var(--bg);border:1px solid var(--border);border-radius:14px;padding:14px;box-shadow:var(--shadow);">
+              <div style="font-size:26px;line-height:1.05;color:var(--title);"><b>24+</b></div>
+              <div style="font-size:var(--small);color:var(--text);">Snippets included</div>
             </td>
-            <td style="width:33.33%;background:#ffffff;border:1px solid #e9edf6;border-radius:14px;padding:12px;">
-              <div style="font-size:13px;"><b>Components</b></div>
-              <div style="color:#64748b;font-size:13px;">Cards, pills, stats, outcomes, trust blocks.</div>
+
+            <td style="background:var(--bg);border:1px solid var(--border);border-radius:14px;padding:14px;box-shadow:var(--shadow);">
+              <div style="font-size:26px;line-height:1.05;color:var(--title);"><b>6</b></div>
+              <div style="font-size:var(--small);color:var(--text);">Demo pages</div>
             </td>
-            <td style="width:33.33%;background:#ffffff;border:1px solid #e9edf6;border-radius:14px;padding:12px;">
-              <div style="font-size:13px;"><b>Consistency</b></div>
-              <div style="color:#64748b;font-size:13px;">Builder-safe + scoped styles = no surprises.</div>
+
+            <td style="background:var(--bg);border:1px solid var(--border);border-radius:14px;padding:14px;box-shadow:var(--shadow);">
+              <div style="font-size:26px;line-height:1.05;color:var(--title);"><b>100%</b></div>
+              <div style="font-size:var(--small);color:var(--text);">Builder compatible</div>
+            </td>
+
+            <td style="background:var(--bg);border:1px solid var(--border);border-radius:14px;padding:14px;box-shadow:var(--shadow);">
+              <div style="font-size:26px;line-height:1.05;color:var(--title);"><b>17–18</b></div>
+              <div style="font-size:var(--small);color:var(--text);">Odoo versions</div>
+            </td>
+          </tr>
+        </table>
+
+      </div>
+
+      <!-- ===================== SECTION: VALUE ===================== -->
+      <div style="margin-top:26px;">
+        <h2 style="margin:0 0 12px;font-size:var(--h2);letter-spacing:-0.2px;color:var(--title);">Results-driven structure (not just visuals)</h2>
+        <div style="color:var(--text);font-size:var(--p);margin-bottom:14px;">
+          NovaConsult Pro is designed like a landing system: hierarchy, spacing, proof blocks and CTAs that scale across pages.
+        </div>
+
+        <table role="presentation" cellpadding="0" cellspacing="0" style="width:100%;border-collapse:separate;border-spacing:12px;">
+          <tr>
+            <td style="width:33.33%;background:var(--bg);border:1px solid var(--border);border-radius:16px;padding:16px;box-shadow:var(--shadow);">
+              <div style="font-size:var(--p);color:var(--title);margin-bottom:8px;"><b>Quick wins</b></div>
+              <div style="color:var(--text);font-size:var(--p);">Built-in “audit” blocks and outcome cards to clarify the first steps.</div>
+            </td>
+            <td style="width:33.33%;background:var(--bg);border:1px solid var(--border);border-radius:16px;padding:16px;box-shadow:var(--shadow);">
+              <div style="font-size:var(--p);color:var(--title);margin-bottom:8px;"><b>Clear roadmap</b></div>
+              <div style="color:var(--text);font-size:var(--p);">Pricing + plans sections already structured for scope &amp; deliverables.</div>
+            </td>
+            <td style="width:33.33%;background:var(--bg);border:1px solid var(--border);border-radius:16px;padding:16px;box-shadow:var(--shadow);">
+              <div style="font-size:var(--p);color:var(--title);margin-bottom:8px;"><b>KPIs &amp; credibility</b></div>
+              <div style="color:var(--text);font-size:var(--p);">Social proof, case studies, metrics — to boost trust and conversion.</div>
             </td>
           </tr>
         </table>
       </div>
-    </div>
 
-    <!-- ===================== SECTION: GALLERY ===================== -->
-    <div style="margin-top:22px;">
-      <h2 style="margin:0 0 8px;font-size:22px;letter-spacing:-0.2px;">Demo pages (prebuilt)</h2>
-      <div style="color:#64748b;font-size:14px;margin-bottom:12px;">Click any screenshot to open it.</div>
+      <!-- ===================== SECTION: SIDE-BY-SIDE ===================== -->
+      <div style="margin-top:26px;">
+        <h2 style="margin:0 0 12px;font-size:var(--h2);letter-spacing:-0.2px;color:var(--title);">Side-by-side comparison</h2>
+        <div style="color:var(--text);font-size:var(--p);margin-bottom:14px;">
+          Show your customers what changes: spacing, hierarchy, components and consistency (replace images with your own).
+        </div>
 
-      <table role="presentation" cellpadding="0" cellspacing="0" style="width:100%;border-collapse:separate;border-spacing:12px;">
-        <tr>
-          <td style="width:50%;background:#f8faff;border:1px solid #e9edf6;border-radius:16px;overflow:hidden;box-shadow:0 6px 18px rgba(10,20,40,.06);">
-            <a href="ss_home.webp" style="display:block;">
-              <img src="ss_home.webp" alt="Homepage" style="width:100%;height:auto;display:block;">
-            </a>
-            <div style="padding:10px;font-size:13px;"><b>Homepage</b> <span style="color:#64748b;">(hero + proof + services)</span></div>
-          </td>
-          <td style="width:50%;background:#f8faff;border:1px solid #e9edf6;border-radius:16px;overflow:hidden;box-shadow:0 6px 18px rgba(10,20,40,.06);">
-            <a href="ss_services.webp" style="display:block;">
-              <img src="ss_services.webp" alt="Services" style="width:100%;height:auto;display:block;">
-            </a>
-            <div style="padding:10px;font-size:13px;"><b>Services</b> <span style="color:#64748b;">(cards + packages)</span></div>
-          </td>
-        </tr>
-        <tr>
-          <td style="width:50%;background:#f8faff;border:1px solid #e9edf6;border-radius:16px;overflow:hidden;box-shadow:0 6px 18px rgba(10,20,40,.06);">
-            <a href="ss_pricing.webp" style="display:block;">
-              <img src="ss_pricing.webp" alt="Pricing" style="width:100%;height:auto;display:block;">
-            </a>
-            <div style="padding:10px;font-size:13px;"><b>Pricing</b> <span style="color:#64748b;">(plans + comparison)</span></div>
-          </td>
-          <td style="width:50%;background:#f8faff;border:1px solid #e9edf6;border-radius:16px;overflow:hidden;box-shadow:0 6px 18px rgba(10,20,40,.06);">
-            <a href="ss_contact.webp" style="display:block;">
-              <img src="ss_contact.webp" alt="Contact" style="width:100%;height:auto;display:block;">
-            </a>
-            <div style="padding:10px;font-size:13px;"><b>Contact</b> <span style="color:#64748b;">(form + info blocks)</span></div>
-          </td>
-        </tr>
-      </table>
-    </div>
+        <div style="background:var(--soft);border:1px solid var(--border);border-radius:18px;padding:16px;box-shadow:var(--shadow);">
+          <table role="presentation" cellpadding="0" cellspacing="0" style="width:100%;border-collapse:separate;border-spacing:12px;">
+            <tr>
+              <td style="width:50%;vertical-align:top;">
+                <div style="font-size:var(--p);color:var(--text);margin:0 0 10px;"><b>Standard website</b></div>
+                <div style="border-radius:14px;overflow:hidden;border:1px solid var(--border);background:var(--bg);">
+                  <img src="compare_standard.webp" alt="Standard website preview" style="width:100%;height:auto;display:block;">
+                </div>
+              </td>
+              <td style="width:50%;vertical-align:top;">
+                <div style="font-size:var(--p);color:var(--text);margin:0 0 10px;"><b>NovaConsult Pro</b></div>
+                <div style="border-radius:14px;overflow:hidden;border:1px solid var(--border);background:var(--bg);">
+                  <img src="compare_nova.webp" alt="NovaConsult Pro preview" style="width:100%;height:auto;display:block;">
+                </div>
+              </td>
+            </tr>
+          </table>
 
-    <!-- ===================== SECTION: EVERYTHING INCLUDED ===================== -->
-    <div style="margin-top:22px;">
-      <h2 style="margin:0 0 10px;font-size:22px;letter-spacing:-0.2px;">Everything included, nothing hidden</h2>
+          <div style="height:12px;"></div>
+          <table role="presentation" cellpadding="0" cellspacing="0" style="width:100%;border-collapse:separate;border-spacing:12px;">
+            <tr>
+              <td style="width:33.33%;background:var(--bg);border:1px solid var(--border);border-radius:14px;padding:14px;">
+                <div style="font-size:var(--p);color:var(--title);"><b>Hierarchy</b></div>
+                <div style="color:var(--text);font-size:var(--p);">Clear headings, lead text, spacing rhythm.</div>
+              </td>
+              <td style="width:33.33%;background:var(--bg);border:1px solid var(--border);border-radius:14px;padding:14px;">
+                <div style="font-size:var(--p);color:var(--title);"><b>Components</b></div>
+                <div style="color:var(--text);font-size:var(--p);">Cards, pills, stats, outcomes, trust blocks.</div>
+              </td>
+              <td style="width:33.33%;background:var(--bg);border:1px solid var(--border);border-radius:14px;padding:14px;">
+                <div style="font-size:var(--p);color:var(--title);"><b>Consistency</b></div>
+                <div style="color:var(--text);font-size:var(--p);">Builder-safe + scoped styles = no surprises.</div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
 
-      <div style="background:#ffffff;border:1px solid #e9edf6;border-radius:18px;padding:14px;box-shadow:0 6px 18px rgba(10,20,40,.06);">
-        <table role="presentation" cellpadding="0" cellspacing="0" style="width:100%;border-collapse:separate;border-spacing:8px;">
+      <!-- ===================== SECTION: GALLERY ===================== -->
+      <div style="margin-top:26px;">
+        <h2 style="margin:0 0 12px;font-size:var(--h2);letter-spacing:-0.2px;color:var(--title);">Demo pages (prebuilt)</h2>
+        <div style="color:var(--text);font-size:var(--p);margin-bottom:14px;">Click any screenshot to open it.</div>
+
+        <table role="presentation" cellpadding="0" cellspacing="0" style="width:100%;border-collapse:separate;border-spacing:12px;">
           <tr>
-            <td style="width:50%;vertical-align:top;">
-              <ul style="margin:0;padding-left:18px;color:#334155;font-size:13px;">
-                <li style="margin:7px 0;">Header + menu + CTA styles</li>
-                <li style="margin:7px 0;">Hero variants (split / centered)</li>
-                <li style="margin:7px 0;">Services grids + feature cards</li>
-                <li style="margin:7px 0;">Case studies + testimonials</li>
-                <li style="margin:7px 0;">Pricing plans + compare section</li>
-              </ul>
+            <td style="width:50%;background:#f8faff;border:1px solid var(--border);border-radius:16px;overflow:hidden;box-shadow:var(--shadow);">
+              <a href="homepage.webp" style="display:block;">
+                <img src="homepage.webp" alt="Homepage" style="width:100%;height:auto;display:block;">
+              </a>
+              <div style="padding:12px;font-size:var(--p);color:var(--text);"><b>Homepage</b> <span style="color:var(--text);">(hero + proof + services)</span></div>
             </td>
-            <td style="width:50%;vertical-align:top;">
-              <ul style="margin:0;padding-left:18px;color:#334155;font-size:13px;">
-                <li style="margin:7px 0;">CTA + form blocks</li>
-                <li style="margin:7px 0;">Logos / references section</li>
-                <li style="margin:7px 0;">FAQ component</li>
-                <li style="margin:7px 0;">Footer layout</li>
-                <li style="margin:7px 0;">Scoped CSS (no global .container override)</li>
-              </ul>
+            <td style="width:50%;background:#f8faff;border:1px solid var(--border);border-radius:16px;overflow:hidden;box-shadow:var(--shadow);">
+              <a href="service-page.webp" style="display:block;">
+                <img src="service-page.webp" alt="Services" style="width:100%;height:auto;display:block;">
+              </a>
+              <div style="padding:12px;font-size:var(--p);color:var(--text);"><b>Services</b> <span style="color:var(--text);">(cards + packages)</span></div>
+            </td>
+          </tr>
+          <tr>
+            <td style="width:50%;background:#f8faff;border:1px solid var(--border);border-radius:16px;overflow:hidden;box-shadow:var(--shadow);">
+              <a href="pricing.webp" style="display:block;">
+                <img src="pricing.webp" alt="Pricing" style="width:100%;height:auto;display:block;">
+              </a>
+              <div style="padding:12px;font-size:var(--p);color:var(--text);"><b>Pricing</b> <span style="color:var(--text);">(plans + comparison)</span></div>
+            </td>
+            <td style="width:50%;background:#f8faff;border:1px solid var(--border);border-radius:16px;overflow:hidden;box-shadow:var(--shadow);">
+              <a href="contact.webp" style="display:block;">
+                <img src="contact.webp" alt="Contact" style="width:100%;height:auto;display:block;">
+              </a>
+              <div style="padding:12px;font-size:var(--p);color:var(--text);"><b>Contact</b> <span style="color:var(--text);">(form + info blocks)</span></div>
             </td>
           </tr>
         </table>
       </div>
-    </div>
 
-    <!-- ===================== SECTION: COLOR PALETTE ===================== -->
-    <div style="margin-top:22px;">
-      <h2 style="margin:0 0 10px;font-size:22px;letter-spacing:-0.2px;">Colour palette</h2>
+      <!-- ===================== SECTION: EVERYTHING INCLUDED ===================== -->
+      <div style="margin-top:26px;">
+        <h2 style="margin:0 0 12px;font-size:var(--h2);letter-spacing:-0.2px;color:var(--title);">Everything included, nothing hidden</h2>
 
-      <div style="display:flex;gap:10px;flex-wrap:wrap;">
-        <div style="width:140px;border:1px solid #e9edf6;border-radius:14px;overflow:hidden;">
-          <div style="height:52px;background:#0b1020;"></div>
-          <div style="padding:10px;font-size:12px;color:#334155;"><b>#0b1020</b><div style="color:#64748b;">Background</div></div>
-        </div>
-        <div style="width:140px;border:1px solid #e9edf6;border-radius:14px;overflow:hidden;">
-          <div style="height:52px;background:#e9eefc;"></div>
-          <div style="padding:10px;font-size:12px;color:#334155;"><b>#e9eefc</b><div style="color:#64748b;">Text</div></div>
-        </div>
-        <div style="width:140px;border:1px solid #e9edf6;border-radius:14px;overflow:hidden;">
-          <div style="height:52px;background:#f3ff1a;"></div>
-          <div style="padding:10px;font-size:12px;color:#334155;"><b>#f3ff1a</b><div style="color:#64748b;">Accent</div></div>
-        </div>
-        <div style="width:140px;border:1px solid #e9edf6;border-radius:14px;overflow:hidden;">
-          <div style="height:52px;background:#22c55e;"></div>
-          <div style="padding:10px;font-size:12px;color:#334155;"><b>#22c55e</b><div style="color:#64748b;">Accent 2</div></div>
+        <div style="background:var(--bg);border:1px solid var(--border);border-radius:18px;padding:16px;box-shadow:var(--shadow);">
+          <table role="presentation" cellpadding="0" cellspacing="0" style="width:100%;border-collapse:separate;border-spacing:8px;">
+            <tr>
+              <td style="width:50%;vertical-align:top;">
+                <ul style="margin:0;padding-left:22px;color:var(--text);font-size:var(--p);">
+                  <li style="margin:10px 0;">Header + menu + CTA styles</li>
+                  <li style="margin:10px 0;">Hero variants (split / centered)</li>
+                  <li style="margin:10px 0;">Services grids + feature cards</li>
+                  <li style="margin:10px 0;">Case studies + testimonials</li>
+                  <li style="margin:10px 0;">Pricing plans + compare section</li>
+                </ul>
+              </td>
+              <td style="width:50%;vertical-align:top;">
+                <ul style="margin:0;padding-left:22px;color:var(--text);font-size:var(--p);">
+                  <li style="margin:10px 0;">CTA + form blocks</li>
+                  <li style="margin:10px 0;">Logos / references section</li>
+                  <li style="margin:10px 0;">FAQ component</li>
+                  <li style="margin:10px 0;">Footer layout</li>
+                  <li style="margin:10px 0;">Scoped CSS (no global .container override)</li>
+                </ul>
+              </td>
+            </tr>
+          </table>
         </div>
       </div>
-    </div>
 
-    <!-- ===================== SECTION: SPECS ===================== -->
-    <div style="margin-top:22px;">
-      <h2 style="margin:0 0 10px;font-size:22px;letter-spacing:-0.2px;">Module specifications</h2>
+      <!-- ===================== SECTION: COLOR PALETTE ===================== -->
+      <div style="margin-top:26px;">
+        <h2 style="margin:0 0 12px;font-size:var(--h2);letter-spacing:-0.2px;color:var(--title);">Colour palette</h2>
 
-      <div style="display:flex;gap:10px;flex-wrap:wrap;">
-        <div style="padding:12px 14px;border-radius:14px;border:1px solid #e9edf6;background:#0b1020;color:#e9eefc;font-size:12px;">
-          <b>Odoo</b><div style="opacity:.8;">17 / 18</div>
-        </div>
-        <div style="padding:12px 14px;border-radius:14px;border:1px solid #e9edf6;background:#0b1020;color:#e9eefc;font-size:12px;">
-          <b>License</b><div style="opacity:.8;">LGPL-3</div>
-        </div>
-        <div style="padding:12px 14px;border-radius:14px;border:1px solid #e9edf6;background:#0b1020;color:#e9eefc;font-size:12px;">
-          <b>Website Builder</b><div style="opacity:.8;">Yes</div>
-        </div>
-        <div style="padding:12px 14px;border-radius:14px;border:1px solid #e9edf6;background:#0b1020;color:#e9eefc;font-size:12px;">
-          <b>Tech</b><div style="opacity:.8;">QWeb + CSS</div>
-        </div>
-        <div style="padding:12px 14px;border-radius:14px;border:1px solid #e9edf6;background:#0b1020;color:#e9eefc;font-size:12px;">
-          <b>Dependencies</b><div style="opacity:.8;">website</div>
+        <div style="display:flex;gap:12px;flex-wrap:wrap;">
+          <div style="width:170px;border:1px solid var(--border);border-radius:14px;overflow:hidden;">
+            <div style="height:62px;background:#0b1020;"></div>
+            <div style="padding:12px;font-size:var(--p);color:var(--text);"><b>#0b1020</b><div style="color:var(--text);">Background</div></div>
+          </div>
+          <div style="width:170px;border:1px solid var(--border);border-radius:14px;overflow:hidden;">
+            <div style="height:62px;background:#e9eefc;"></div>
+            <div style="padding:12px;font-size:var(--p);color:var(--text);"><b>#e9eefc</b><div style="color:var(--text);">Text</div></div>
+          </div>
+          <div style="width:170px;border:1px solid var(--border);border-radius:14px;overflow:hidden;">
+            <div style="height:62px;background:#f3ff1a;"></div>
+            <div style="padding:12px;font-size:var(--p);color:var(--text);"><b>#f3ff1a</b><div style="color:var(--text);">Accent</div></div>
+          </div>
+          <div style="width:170px;border:1px solid var(--border);border-radius:14px;overflow:hidden;">
+            <div style="height:62px;background:#22c55e;"></div>
+            <div style="padding:12px;font-size:var(--p);color:var(--text);"><b>#22c55e</b><div style="color:var(--text);">Accent 2</div></div>
+          </div>
         </div>
       </div>
-    </div>
 
-    <!-- ===================== SECTION: INSTALL ===================== -->
-    <div style="margin-top:22px;">
-      <h2 style="margin:0 0 10px;font-size:22px;letter-spacing:-0.2px;">Installation</h2>
-      <div style="background:#ffffff;border:1px solid #e9edf6;border-radius:18px;padding:14px;box-shadow:0 6px 18px rgba(10,20,40,.06);">
-        <ol style="margin:0;padding-left:18px;color:#334155;font-size:13px;">
-          <li style="margin:8px 0;">Install the module <b>NovaConsult Pro Theme</b>.</li>
-          <li style="margin:8px 0;">Go to <b>Website</b> → <b>Configuration</b> → <b>Settings</b> and select the theme.</li>
-          <li style="margin:8px 0;">Open the demo pages (Homepage, Services, Pricing, Method, Projects, Contact).</li>
-          <li style="margin:8px 0;">Use Website Builder to replace content and images (drag &amp; drop).</li>
-        </ol>
-        <div style="margin-top:10px;color:#64748b;font-size:12px;">
-          Tip: keep your custom sections inside <b>#wrap</b> and rely on scoped theme classes to avoid conflicts.
+      <!-- ===================== SECTION: SPECS ===================== -->
+      <div style="margin-top:26px;">
+        <h2 style="margin:0 0 12px;font-size:var(--h2);letter-spacing:-0.2px;color:var(--title);">Module specifications</h2>
+
+        <div style="display:flex;gap:12px;flex-wrap:wrap;">
+          <div style="padding:14px 16px;border-radius:14px;border:1px solid var(--border);background:#0b1020;color:#ffffff;font-size:var(--p);">
+            <b>Odoo</b><div style="opacity:1;">17 / 18</div>
+          </div>
+          <div style="padding:14px 16px;border-radius:14px;border:1px solid var(--border);background:#0b1020;color:#ffffff;font-size:var(--p);">
+            <b>License</b><div style="opacity:1;">LGPL-3</div>
+          </div>
+          <div style="padding:14px 16px;border-radius:14px;border:1px solid var(--border);background:#0b1020;color:#ffffff;font-size:var(--p);">
+            <b>Website Builder</b><div style="opacity:1;">Yes</div>
+          </div>
+          <div style="padding:14px 16px;border-radius:14px;border:1px solid var(--border);background:#0b1020;color:#ffffff;font-size:var(--p);">
+            <b>Tech</b><div style="opacity:1;">QWeb + CSS</div>
+          </div>
+          <div style="padding:14px 16px;border-radius:14px;border:1px solid var(--border);background:#0b1020;color:#ffffff;font-size:var(--p);">
+            <b>Dependencies</b><div style="opacity:1;">website</div>
+          </div>
         </div>
       </div>
-    </div>
 
-    <!-- ===================== SECTION: SUPPORT ===================== -->
-    <div style="margin-top:22px;">
-      <div style="border-radius:18px;border:1px solid #e9edf6;background:#fbfbfe;padding:16px;box-shadow:0 6px 18px rgba(10,20,40,.06);">
-        <div style="font-size:18px;letter-spacing:-0.2px;margin:0 0 6px;"><b>Support</b></div>
-        <div style="color:#64748b;font-size:13px;margin-bottom:12px;">
-          Need help with installation or customization? Contact us and we’ll assist you.
-        </div>
-
-        <div style="display:flex;gap:10px;flex-wrap:wrap;align-items:center;">
-          <a href="mailto:kadama328@gmail.com"
-             style="display:inline-block;padding:10px 14px;border-radius:14px;border:1px solid rgba(243,255,26,.25);background:linear-gradient(135deg, rgba(243,255,26,.95), rgba(34,197,94,.90));color:#071020;font-weight:800;text-decoration:none;">
-            Email support
-          </a>
-          <span style="color:#64748b;font-size:13px;">Average reply: 24–48h</span>
+      <!-- ===================== SECTION: INSTALL ===================== -->
+      <div style="margin-top:26px;">
+        <h2 style="margin:0 0 12px;font-size:var(--h2);letter-spacing:-0.2px;color:var(--title);">Installation</h2>
+        <div style="background:var(--bg);border:1px solid var(--border);border-radius:18px;padding:16px;box-shadow:var(--shadow);">
+          <ol style="margin:0;padding-left:22px;color:var(--text);font-size:var(--p);">
+            <li style="margin:10px 0;">Install the module <b>NovaConsult Pro Theme</b>.</li>
+            <li style="margin:10px 0;">Go to <b>Website</b> → <b>Configuration</b> → <b>Settings</b> and select the theme.</li>
+            <li style="margin:10px 0;">Open the demo pages (Homepage, Services, Pricing, Method, Projects, Contact).</li>
+            <li style="margin:10px 0;">Use Website Builder to replace content and images (drag &amp; drop).</li>
+          </ol>
+          <div style="margin-top:12px;color:var(--text);font-size:var(--p);">
+            Tip: keep your custom sections inside <b>#wrap</b> and rely on scoped theme classes to avoid conflicts.
+          </div>
         </div>
       </div>
-    </div>
 
-    <!-- ===================== FOOTER NOTE ===================== -->
-    <div style="margin-top:20px;padding-top:12px;border-top:1px solid #eef1fb;font-size:12px;color:#6b7387;">
-      <div>© NovaConsult Pro • Odoo Theme</div>
-      <div style="color:#64748b;margin-top:4px;">File: <b>static/description/index.html</b></div>
-    </div>
+      <!-- ===================== SECTION: SUPPORT ===================== -->
+      <div style="margin-top:26px;">
+        <div style="border-radius:18px;border:1px solid var(--border);background:var(--soft);padding:16px;box-shadow:var(--shadow);">
+          <div style="font-size:var(--h2);letter-spacing:-0.2px;margin:0 0 8px;color:var(--title);"><b>Support</b></div>
+          <div style="color:var(--text);font-size:var(--p);margin-bottom:14px;">
+            Need help with installation or customization? Contact us and we’ll assist you.
+          </div>
+
+          <div style="display:flex;gap:12px;flex-wrap:wrap;align-items:center;">
+            <a href="mailto:kadama328@gmail.com"
+               style="display:inline-block;padding:12px 16px;border-radius:14px;border:1px solid rgba(243,255,26,.25);background:linear-gradient(135deg, rgba(243,255,26,.95), rgba(34,197,94,.90));color:#071020;font-weight:800;text-decoration:none;font-size:var(--p);">
+              Email support
+            </a>
+            <span style="color:var(--text);font-size:var(--p);">Average reply: 24–48h</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- ===================== FOOTER NOTE ===================== -->
+      <div style="margin-top:22px;padding-top:12px;border-top:1px solid #eef1fb;font-size:var(--p);color:var(--text);">
+        <div>© NovaConsult Pro • Odoo Theme</div>
+        <div style="color:var(--text);margin-top:6px;">File: <b>static/description/index.html</b></div>
+      </div>
+
+    </div><!-- /BASE TEXT SYSTEM -->
 
   </div>
 </body>
